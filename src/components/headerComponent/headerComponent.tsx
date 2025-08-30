@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const HeaderComponent = () => {
   return (
-    <header className="w-full h-[90px] flex items-center justify-around p-2 bg-slate-300">
+    <header className="w-full h-[90px] flex items-center justify-around p-2 bg-slate-50">
       <Link href="/" className="p-4 border border-slate-700 rounded-lg cur">
         <h1>kkkkkkkkkkk</h1>
       </Link>
