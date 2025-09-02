@@ -7,9 +7,9 @@ const ImageComponent = () => {
         src="/image.jpg"
         alt="developer image"
         width={400}
-        height={200}
+        height={300}
         quality={100}
-        className="object-fill rounded-full"
+        className="rounded-full object-cover"
       />
     </div>
   );

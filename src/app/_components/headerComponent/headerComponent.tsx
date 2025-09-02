@@ -1,9 +1,9 @@
 import Link from "next/link";
-import LinkComponent from "../linkComponent/linkComponent";
+import LinkComponent from "../linksComponent/linkComponent";
 
 const HeaderComponent = () => {
   return (
-    <header className="w-full h-[90px] fixed flex items-center justify-around p-2 bg-transparent border-b">
+    <header className="w-full h-[90px] fixed flex items-center justify-around p-2 bg-transparent border-b border-gray-700">
       <Link
         href="/"
         className="p-4 border border-white text-white rounded-lg cur"
