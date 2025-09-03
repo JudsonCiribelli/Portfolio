@@ -25,6 +25,9 @@ const InitalApresentation = () => {
         <Link href="https://github.com/JudsonCiribelli" target="_blank">
           <ShinyButton className="text-white mt-2 flex">GitHub</ShinyButton>
         </Link>
+        <Link href="https://github.com/JudsonCiribelli" target="_blank">
+          <ShinyButton className="text-white mt-2">Download CV</ShinyButton>
+        </Link>
       </div>
     </div>
   );

@@ -7,8 +7,9 @@ import HeaderComponent from "@/app/_components/headerComponent/headerComponent";
 import ImageComponent from "./_components/imageComponent/imageComponent";
 import { TextAnimate } from "./magicui/text-animate";
 import InitalApresentation from "./_components/initialApresentationComponent/initialApresentation";
-// import { BorderBeam } from "./magicui/border-beam";
+import { BorderBeam } from "./magicui/border-beam";
 import TechnologiesComponent from "./_components/technologiesComponent/technologiesComponent";
+import { IconCloud } from "./magicui/icon-cloud";
 
 const Home = () => {
   const { resolvedTheme } = useTheme();
@@ -17,6 +18,28 @@ const Home = () => {
   useEffect(() => {
     setColor(resolvedTheme === "light" ? "#00000" : "#ffffff");
   }, [resolvedTheme]);
+
+  const slugs = [
+    "typescript",
+    "javascript",
+    "react",
+    "html5",
+    "css",
+    "node",
+    "next",
+    "prisma",
+    "postgresql",
+    "firebase",
+    "testinglibrary",
+    "jest",
+    "docker",
+    "git",
+    "github",
+    "visualstudiocode",
+  ];
+  const images = slugs.map(
+    (slug) => `https://cdn.simpleicons.org/${slug}/${slug}`
+  );
 
   return (
     <>
@@ -33,7 +56,9 @@ const Home = () => {
         <section className="flex h-[850px] w-full overflow-hidden  ">
           <div className="flex flex-col items-center justify-center w-full">
             {/* Nome */}
-            <h1 className="text-white text-7xl">Judson Ciribelli</h1>
+            <h1 className="text-white text-7xl font-normal">
+              Judson Ciribelli
+            </h1>
             <TextAnimate
               animation="slideUp"
               as="h1"
@@ -54,17 +79,23 @@ const Home = () => {
           <div className="flex relative w-[1800px] items-center justify-evenly rounded-lg p-10 [box-shadow:-4px_-43px_49px_-5px_rgba(148,96,10,0.24)]">
             <InitalApresentation />
             <ImageComponent />
-            {/* <BorderBeam duration={12} size={80} className="via-white" /> */}
+            <BorderBeam duration={12} size={80} className="via-white" />
           </div>
         </section>
 
-        <section className="w-full h-[900px] mt-6">
+        <section className="w-full h-[600px] mt-10 p-3">
           <h1 className="text-white text-7xl text-center">Tecnologias</h1>
-          <div className="flex items-center justify-between w-full mt-10">
-            <TechnologiesComponent />
-            <div></div>
+          <div className="flex items-center justify-evenly mt-10 bg-white">
+            <div>
+              <TechnologiesComponent />
+            </div>
+            <div className="relative flex items-center justify-center overflow-hidden">
+              <IconCloud images={images} />
+            </div>
           </div>
         </section>
+
+        <section className="w-full h-[600px]"></section>
       </main>
     </>
   );
