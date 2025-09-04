@@ -10,6 +10,13 @@ import InitalApresentation from "./_components/initialApresentationComponent/ini
 import { BorderBeam } from "./magicui/border-beam";
 import TechnologiesComponent from "./_components/technologiesComponent/technologiesComponent";
 import { IconCloud } from "./magicui/icon-cloud";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "./_components/ui/carousel";
 
 const Home = () => {
   const { resolvedTheme } = useTheme();
@@ -95,7 +102,24 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="w-full h-[600px]"></section>
+        <section className="w-[100%] h-[900px] items-center justify-center flex flex-col p-3 space-y-4">
+          <h1 className="text-white text-7xl text-center ">Projetos</h1>
+          <Carousel className="w-full max-w-[1600px] max-h-[900px] border border-white ">
+            <CarouselContent>
+              {Array.from({ length: 5 }).map((_, index) => (
+                <CarouselItem key={index}>
+                  <div className="flex items-center">
+                    <div className="w-[60%] h-[600px] border border-white"></div>
+                    <div className="w-[40%] h-[600px] border border-blue-600"></div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
+        </section>
+        <footer className="mt-8 h-[600px] w-full "></footer>
       </main>
     </>
   );
