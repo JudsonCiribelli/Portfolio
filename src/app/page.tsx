@@ -17,6 +17,10 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "./_components/ui/carousel";
+import InventoryDescription from "./_components/Inventory-Description/inventoryDescription";
+import QuickBiteDescription from "./_components/quickBiteDescription/quickBiteDescription";
+import InvetoryComponent from "./_components/inventoryComponent/inventoryComponent";
+import QuickBiteComponent from "./_components/quickBiteComponent/quickBiteComponent";
 
 const Home = () => {
   const { resolvedTheme } = useTheme();
@@ -102,21 +106,37 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="w-[100%] h-[900px] items-center justify-center flex flex-col p-3 space-y-4">
+        <section className="w-[100%] h-[900px] items-center justify-center flex flex-col p-3 space-y-10">
           <h1 className="text-white text-7xl text-center ">Projetos</h1>
-          <Carousel className="w-full max-w-[1600px] max-h-[900px] border border-white ">
+          <Carousel className="w-full max-w-[1400px] max-h-[900px]  p-4 rounded-lg">
             <CarouselContent>
-              {Array.from({ length: 5 }).map((_, index) => (
-                <CarouselItem key={index}>
-                  <div className="flex items-center">
-                    <div className="w-[60%] h-[600px] border border-white"></div>
-                    <div className="w-[40%] h-[600px] border border-blue-600"></div>
-                  </div>
-                </CarouselItem>
+              {Array.from({ length: 2 }).map((_, index) => (
+                <>
+                  <CarouselItem>
+                    <div className="flex items-center justify-evenly">
+                      <QuickBiteComponent />
+
+                      <div className="w-[40%] h-[600px] ">
+                        <QuickBiteDescription />
+                      </div>
+                    </div>
+                  </CarouselItem>
+
+                  <CarouselItem key={index}>
+                    <div className="flex items-center justify-evenly">
+                      <InvetoryComponent />
+
+                      <div className="w-[40%] h-[600px] ">
+                        <InventoryDescription />
+                      </div>
+                    </div>
+                  </CarouselItem>
+                </>
               ))}
             </CarouselContent>
             <CarouselPrevious />
             <CarouselNext />
+            <BorderBeam duration={12} size={80} className="via-white" />
           </Carousel>
         </section>
         <footer className="mt-8 h-[600px] w-full "></footer>
