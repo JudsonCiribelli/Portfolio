@@ -4,7 +4,7 @@ const ImageComponent = () => {
   return (
     <div>
       <Image
-        src="/image.jpg"
+        src="/ASL_4347.jpg"
         alt="developer image"
         width={400}
         height={300}
