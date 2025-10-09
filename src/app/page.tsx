@@ -21,6 +21,7 @@ import InventoryDescription from "./_components/Inventory-Description/inventoryD
 import QuickBiteDescription from "./_components/quickBiteDescription/quickBiteDescription";
 import InvetoryComponent from "./_components/inventoryComponent/inventoryComponent";
 import QuickBiteComponent from "./_components/quickBiteComponent/quickBiteComponent";
+import DialogComponent from "./_components/dialogComponent/dialogComponent";
 
 const Home = () => {
   const { resolvedTheme } = useTheme();
@@ -139,7 +140,31 @@ const Home = () => {
             <BorderBeam duration={12} size={80} className="via-white" />
           </Carousel>
         </section>
-        <footer className="mt-8 h-[600px] w-full "></footer>
+
+        {/* Educação */}
+        <section className="w-full h-[600px] mt-10 p-3 bg-white">
+          <h1 className="font-semibold text-7xl text-center mt-2">Educação</h1>
+
+          <div className="flex items-center justify-evenly space-y-5">
+            <div className="flex flex-col">
+              <h1 className="text-xl font-semibold">Formação Acadêmica</h1>
+              <h2 className="text-lg">
+                Interdisciplinar em Ciências e Tecnologia
+              </h2>
+              <h4 className="text-sm">UFMA - Concluído em Agosto de 2025</h4>
+
+              <div className=" mt-2">
+                <DialogComponent />
+              </div>
+            </div>
+
+            <div></div>
+          </div>
+        </section>
+
+        <footer className="mt-8 h-[600px] w-full ">
+          <h1 className="text-white">Contato</h1>
+        </footer>
       </main>
     </>
   );
