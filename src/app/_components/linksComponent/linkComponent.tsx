@@ -9,7 +9,7 @@ interface LinkComponentProps {
 const LinkComponent = ({ href, name, target }: LinkComponentProps) => {
   return (
     <Link href={href} target={target}>
-      <li className="text-lg  border border-white rounded-lg p-2 text-white">
+      <li className="text-lg border border-white rounded-lg p-2 text-white">
         {name}
       </li>
     </Link>
