@@ -12,7 +12,7 @@ const HeaderComponent = () => {
       </Link>
       <div className="flex items-center gap-4 list-none xl:gap-8">
         <LinkComponent href="/" name="Sobre" />
-        <LinkComponent href="/" name="Projetos" />
+        <LinkComponent href="/projects" name="Projetos" />
         <LinkComponent href="/" name="Contato" />
       </div>
     </header>
