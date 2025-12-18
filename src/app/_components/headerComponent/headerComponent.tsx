@@ -3,7 +3,7 @@ import LinkComponent from "../linksComponent/linkComponent";
 
 const HeaderComponent = () => {
   return (
-    <header className="w-full h-20 flex items-center justify-around  bg-black border-b border-gray-700">
+    <header className="w-full h-25 flex items-center justify-around  bg-black border-b border-gray-700">
       <Link
         href="/"
         className="p-2 text-lg border border-white text-white rounded-lg"
