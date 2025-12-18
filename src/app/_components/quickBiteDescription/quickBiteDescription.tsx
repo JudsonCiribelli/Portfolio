@@ -60,6 +60,7 @@ const QuickBiteDescription = () => {
       <div className="flex flex-col gap-4">
         <Button asChild className="bg-blue-600 text-lg hover:bg-blue-600">
           <Link
+            className="text-white"
             target="_blank"
             href="https://github.com/JudsonCiribelli/QuickBiteClone"
           >
@@ -73,6 +74,7 @@ const QuickBiteDescription = () => {
           className="bg-blue-600 text-lg hover:bg-blue-600"
         >
           <Link
+            className="text-white"
             target="_blank"
             href="https://github.com/JudsonCiribelli/QuickBiteClone"
           >

@@ -9,7 +9,7 @@ import Image from "next/image";
 
 const QuickBiteComponent = () => {
   return (
-    <Carousel className="w-[45%] h-[400px]">
+    <Carousel className="w-[45%] h-[600px]">
       <CarouselContent>
         <CarouselItem>
           <Image
