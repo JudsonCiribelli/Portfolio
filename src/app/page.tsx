@@ -98,117 +98,117 @@ const Home = () => {
       </section>
 
       {/* Projetos */}
-      <section className="h-[1000px] items-center mb-4 flex flex-col space-y-2 m-2 xl:h-[550px]">
-        <h1 className="text-2xl text-white font-semibold xl:text-7xl mb-4">
-          Projetos
+      <section className="h-auto flex flex-col items-center mb-4 space-y-2 xl:m-30">
+        <h1 className="text-2xl text-white font-semibold xl:text-7xl mb-4 text-center">
+          Projeto destaque
         </h1>
 
-        <div className="w-full flex flex-col items-center justify-center gap-3 xl:flex-row ">
-          {/* Image project */}
-          <Image
-            src="/api-image.png"
-            alt="api-image"
-            width={650}
-            height={650}
-            quality={100}
-            className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
-          />
-          {/* About project */}
-          <div className="flex flex-col items-center justify-center space-y-4 h-auto p-7 w-full xl:w-[50%] gap-2 xl:items-start xl:border border-solid rounded-xs border-white">
-            <h1 className="text-blue-500 text-2xl font-semibold">LanchApp</h1>
+        <div className="flex flex-col p-3 space-y-4 border  border-solid border-white rounded-sm">
+          <h1 className="text-blue-500 text-2xl font-semibold">McProcessSim</h1>
+          <p className="text-white">
+            Simulação completa de um ecossistema de autoatendimento para
+            fast-food. A aplicação gerencia desde a autenticação do usuário e
+            escolha do método de consumo (Delivery/Mesa) até o checkout
+            financeiro seguro integrado via Stripe, persistindo todo o histórico
+            de pedidos.
+          </p>
+          <div className="flex flex-col xl:flex xl:flex-row items-center justify-evenly h-auto">
+            <Image
+              src="/McProcessim/TelaInicial.png"
+              alt="api-image"
+              width={650}
+              height={650}
+              quality={100}
+              className="mb-2 object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[450px]"
+            />
+            <Image
+              src="/McProcessim/TelaInicial.png"
+              alt="tela inicial"
+              width={650}
+              height={650}
+              quality={100}
+              className="mb-2 object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[450px]"
+            />
+          </div>
+          <div className="grid grid-cols-2 gap-1 xl:grid-cols-4">
+            <ShimmerButton className="shadow-2xl">
+              <div className="flex gap-2">
+                <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+                  React
+                </span>
+                <Image
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                  width={20}
+                  height={20}
+                  alt="Node icon"
+                />
+              </div>
+            </ShimmerButton>
 
-            <p className="text-white">
-              Backend completo para gestão de pedidos de uma
-              lanchonete/pizzaria, focado em segurança, testes automatizados e
-              arquitetura escalável. Este projeto simula um cenário real de Food
-              Delivery. A aplicação permite que clientes façam pedidos
-              (Delivery, Retirada ou Mesa), acompanhem o status em tempo real e
-              gerenciem seus endereços. Para o estabelecimento, o sistema
-              oferece controle total do cardápio e um fluxo de pedidos otimizado
-              para a cozinha. O foco principal foi aplicar Clean Code,
-              arquitetura em camadas, testes de integração e validações
-              rigorosas de segurança.
-            </p>
+            <ShimmerButton className="shadow-2xl">
+              <div className="flex items-center justify-center gap-1">
+                <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+                  Typerscript
+                </span>
+                <Image
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+                  width={20}
+                  height={20}
+                  alt="ts icon"
+                />
+              </div>
+            </ShimmerButton>
 
-            <div className="grid grid-cols-2 gap-1 xl:flex">
-              <ShimmerButton className="shadow-2xl">
-                <div className="flex gap-2">
-                  <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                    Node
-                  </span>
-                  <Image
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
-                    width={20}
-                    height={20}
-                    alt="Node icon"
-                  />
-                </div>
-              </ShimmerButton>
+            <ShimmerButton className="shadow-2xl">
+              <div className="flex items-center justify-center gap-1 ml-0">
+                <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+                  Postgres
+                </span>
+                <Image
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+                  width={20}
+                  height={20}
+                  alt="Postgres icon"
+                />
+              </div>
+            </ShimmerButton>
 
-              <ShimmerButton className="shadow-2xl">
-                <div className="flex items-center justify-center gap-1">
-                  <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                    Typerscript
-                  </span>
-                  <Image
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
-                    width={20}
-                    height={20}
-                    alt="ts icon"
-                  />
-                </div>
-              </ShimmerButton>
-
-              <ShimmerButton className="shadow-2xl">
-                <div className="flex items-center justify-center gap-1 ml-0">
-                  <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                    Postgres
-                  </span>
-                  <Image
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
-                    width={20}
-                    height={20}
-                    alt="Postgres icon"
-                  />
-                </div>
-              </ShimmerButton>
-
-              <ShimmerButton className="shadow-2xl">
-                <div className="flex items-center justify-center gap-1 ml-0">
-                  <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                    Express
-                  </span>
-                  <Image
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
-                    width={20}
-                    height={20}
-                    alt="Postgres icon"
-                    className="bg-white rounded-full p-0.4"
-                  />
-                </div>
-              </ShimmerButton>
-            </div>
-            <Button
-              asChild
-              className="text-white w-full p-2 bg-blue-500"
-              variant="secondary"
-            >
+            <ShimmerButton className="shadow-2xl">
+              <div className="flex items-center justify-center gap-1 ml-0">
+                <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+                  NextJs
+                </span>
+                <Image
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
+                  width={20}
+                  height={20}
+                  alt="Postgres icon"
+                  className="bg-white rounded-full p-0.4"
+                />
+              </div>
+            </ShimmerButton>
+          </div>
+          <div className="flex gap-2">
+            <Button asChild className="bg-white w-[50%]">
               <Link
-                href="https://github.com/JudsonCiribelli/LanchApp"
+                href="https://github.com/JudsonCiribelli/McProcessSim"
                 target="_blank"
               >
-                Codigo
+                Repositório
               </Link>
             </Button>
+            <Button asChild className="bg-white w-[50%]">
+              <Link href="/">Projeto</Link>
+            </Button>
           </div>
+          <Button
+            className="w-[460px] mt-0 mb-0 p-4 bg-blue-500  text-white xl:w-full xl:mt-4 xl:p-6"
+            asChild
+            variant="secondary"
+          >
+            <Link href="/projects">Veja mais</Link>
+          </Button>
         </div>
-        <Button
-          className="w-[360px] mt-0 mb-0 p-4 bg-blue-500  text-white xl:w-[85%] xl:mt-4 xl:p-6"
-          asChild
-          variant="secondary"
-        >
-          <Link href="/projects">Veja mais</Link>
-        </Button>
       </section>
 
       {/* Educação */}
@@ -252,7 +252,7 @@ const Home = () => {
               Foco avançado em React, Next.js, Tailwind e boas práticas de clean
               code.
             </p>
-            <div className="flex flex-col my-2 w-[95%] border-none xl:border border-black xl:border-solid rounded-lg">
+            <div className="flex flex-col my-2 w-[95%] border-none">
               <h2 className="text-lg">Fábrica de Aplicativos</h2>
               <h4 className="text-sm font-semibold">
                 Sujeito Programador - Matheus Fraga
