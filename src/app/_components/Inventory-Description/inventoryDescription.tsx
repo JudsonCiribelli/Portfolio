@@ -6,7 +6,9 @@ import { Button } from "../ui/button";
 const InventoryDescription = () => {
   return (
     <div className="p-4 space-y-6 flex flex-col">
-      <h1 className="text-blue-500 text-xl mb-2 font-semibold">Quick Bite</h1>
+      <h1 className="text-blue-500 text-xl mb-2 font-semibold">
+        Inventory Manager
+      </h1>
       <p className="text-white text-sm">
         Este projeto foi desenvolvido para facilitar o controle de produtos e
         acompanhar o desempenho das vendas de forma prática e visual. O sistema
@@ -59,6 +61,7 @@ const InventoryDescription = () => {
       <div className="flex flex-col gap-4">
         <Button asChild className="bg-blue-600 text-lg hover:bg-blue-600">
           <Link
+            className="text-white"
             target="_blank"
             href="https://github.com/JudsonCiribelli/Inventory-Manager"
           >
@@ -72,6 +75,7 @@ const InventoryDescription = () => {
           className="bg-blue-600 text-lg hover:bg-blue-600"
         >
           <Link
+            className="text-white"
             target="_blank"
             href="https://github.com/JudsonCiribelli/Inventory-Manager"
           >
