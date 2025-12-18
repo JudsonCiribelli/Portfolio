@@ -15,8 +15,6 @@ import { Button } from "./_components/ui/button";
 import Link from "next/link";
 import { ShimmerButton } from "./magicui/shimmer-button";
 import { BookOpen, Code2, GraduationCap } from "lucide-react";
-import ContactComponent from "./_components/contactComponent/contactComponent";
-// import ProjectsComponents from "./_components/projectsComponent/projectsComponent";
 
 const Home = () => {
   const { resolvedTheme } = useTheme();
@@ -214,7 +212,7 @@ const Home = () => {
       </section>
 
       {/* Educação */}
-      <section className="w-full h-[900px] mt-10 p-3 bg-white">
+      <section className="w-full h-[900px] mt-10 p-3 bg-white mb-5">
         <h1 className="text-black font-semibold text-2xl text-center mb-2 xl:text-7xl xl:mb-4">
           Educação & Certificações
         </h1>
@@ -286,13 +284,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      <footer className="mt-5 h-[480px] w-full xl:h-[400px] ">
-        <h1 className="text-white text-center text-2xl xl:text-7xl">Contato</h1>
-        <div>
-          <ContactComponent />
-        </div>
-      </footer>
     </main>
   );
 };
