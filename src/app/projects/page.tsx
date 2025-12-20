@@ -6,13 +6,13 @@ import ProjectsComponents from "../_components/projectsComponent/projectsCompone
 
 const ProjectsPage = () => {
   return (
-    <section className="bg-black my-2 w-full xl:flex items-center flex-col justify-center">
+    <section className="bg-black mt-2 mb-8 w-full xl:flex items-center flex-col justify-center">
       <h1 className="text-white text-lg text-center font-semibold py-2 my-5 xl:text-2xl">
         Meus Projetos
       </h1>
       <div className="w-full block flex-col space-y-4 xl:hidden xl:space-y-8">
         {/* McProcessim */}
-        <div className="flex flex-col p-3 space-y-4 border border-solid border-white rounded-sm m-1">
+        <div className="flex flex-col p-3 space-y-4  border border-solid border-white rounded-sm m-1">
           <h1 className="text-blue-500 text-2xl font-semibold">McProcessSim</h1>
           <p className="text-white">
             Simulação completa de um ecossistema de autoatendimento para
@@ -21,38 +21,43 @@ const ProjectsPage = () => {
             financeiro seguro integrado via Stripe, persistindo todo o histórico
             de pedidos.
           </p>
-          <Image
-            src="/McProcessim/imageMcProcessim.png"
-            alt="api-image"
-            width={650}
-            height={650}
-            quality={100}
-            className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
-          />
-          <Image
-            src="/McProcessim/TelaInicial.png"
-            alt="api-image"
-            width={650}
-            height={650}
-            quality={100}
-            className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
-          />
-          <Image
-            src="/McProcessim/TelaDoProduto.png"
-            alt="api-image"
-            width={650}
-            height={650}
-            quality={100}
-            className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
-          />
-          <Image
-            src="/McProcessim/TelaDoPedido.png"
-            alt="api-image"
-            width={650}
-            height={650}
-            quality={100}
-            className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
-          />
+          <div className="flex flex-col items-center gap-3">
+            <Image
+              src="/McProcessim/imageMcProcessim.png"
+              alt="api-image"
+              width={650}
+              height={650}
+              quality={100}
+              className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
+            />
+            <Image
+              src="/McProcessim/TelaInicial.png"
+              alt="api-image"
+              width={650}
+              height={650}
+              quality={100}
+              className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
+            />
+            <Image
+              src="/McProcessim/TelaDoProduto.png"
+              alt="api-image"
+              width={650}
+              height={650}
+              quality={100}
+              className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
+            />
+            <Image
+              src="/McProcessim/TelaDoPedido.png"
+              alt="api-image"
+              width={650}
+              height={650}
+              quality={100}
+              className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
+            />
+          </div>
+          <h2 className="text-white text-sm font-semibold">
+            Tecnologias utilizadas
+          </h2>
           <div className="grid grid-cols-2 gap-1 xl:flex">
             <ShimmerButton className="shadow-2xl">
               <div className="flex gap-2">
@@ -139,14 +144,16 @@ const ProjectsPage = () => {
             aplicar Clean Code, arquitetura em camadas, testes de integração e
             validações rigorosas de segurança.
           </p>
-          <Image
-            src="/api-image.png"
-            alt="api-image"
-            width={650}
-            height={650}
-            quality={100}
-            className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
-          />
+          <div className="flex flex-col items-center justify-center">
+            <Image
+              src="/api-image.png"
+              alt="api-image"
+              width={650}
+              height={650}
+              quality={100}
+              className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
+            />
+          </div>
 
           <h2 className="text-white text-sm font-semibold">
             Tecnologias utilizadas
@@ -234,40 +241,40 @@ const ProjectsPage = () => {
             cancelamento) e um sistema de avaliação pós-serviço para garantir a
             qualidade do atendimento.
           </p>
-          <Image
-            src="/Barber-Pro/HomePage.png"
-            alt="Barber pro home page"
-            width={650}
-            height={650}
-            quality={100}
-            className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
-          />
-          <Image
-            src="/Barber-Pro/agendamentos.png"
-            alt="Agendamentos"
-            width={650}
-            height={650}
-            quality={100}
-            className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
-          />
-          <Image
-            src="/Barber-Pro/avaliacao.png"
-            alt="Avaliação"
-            width={650}
-            height={650}
-            quality={100}
-            className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
-          />
-
-          <Image
-            src="/Barber-Pro/login&logout.png"
-            alt="login page e logout page"
-            width={650}
-            height={650}
-            quality={100}
-            className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
-          />
-
+          <div className="flex flex-col items-center justify-center gap-3">
+            <Image
+              src="/Barber-Pro/HomePage.png"
+              alt="Barber pro home page"
+              width={650}
+              height={650}
+              quality={100}
+              className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
+            />
+            <Image
+              src="/Barber-Pro/agendamentos.png"
+              alt="Agendamentos"
+              width={650}
+              height={650}
+              quality={100}
+              className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
+            />
+            <Image
+              src="/Barber-Pro/avaliacao.png"
+              alt="Avaliação"
+              width={650}
+              height={650}
+              quality={100}
+              className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
+            />
+            <Image
+              src="/Barber-Pro/login&logout.png"
+              alt="login page e logout page"
+              width={650}
+              height={650}
+              quality={100}
+              className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
+            />
+          </div>
           <h2 className="text-white text-sm font-semibold">
             Tecnologias utilizadas
           </h2>
@@ -330,7 +337,7 @@ const ProjectsPage = () => {
           </div>
         </div>
       </div>
-      <div className="hidden my-8 xl:block">
+      <div className="hidden my-10 xl:block">
         <div className=" flex items-center justify-center">
           <ProjectsComponents />
         </div>
