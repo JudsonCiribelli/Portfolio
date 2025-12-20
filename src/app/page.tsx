@@ -47,7 +47,7 @@ const Home = () => {
   );
 
   return (
-    <main className=" bg-black w-full flex flex-col space-y-5">
+    <main className="bg-black w-full flex flex-col items-center justify-center space-y-5">
       <Particles
         className="absolute inset-0 z-0 w-full"
         quantity={30}
@@ -56,8 +56,9 @@ const Home = () => {
         ease={50}
         color={color}
       />
-      <section className="flex h-[750px] w-full overflow-hidden">
-        <div className="flex flex-col items-center justify-center w-full">
+      {/* Texto */}
+      <section className="flex h-[750px] items-center justify-center w-full">
+        <div className="flex flex-col items-center justify-center">
           {/* Nome */}
           <h1 className="text-white text-2xl font-normal xl:text-7xl">
             Judson Ciribelli
@@ -75,15 +76,16 @@ const Home = () => {
       </section>
 
       {/* ABOUT */}
-      <section className="my-12 w-full p-2 flex items-center justify-center h-[700px]">
-        <div className="flex flex-col relative  w-[1800px] items-center justify-evenly gap-4 rounded-lg p-10 [box-shadow:-4px_-43px_49px_-5px_rgba(148,96,10,0.24)]  xl:flex-row mb-10">
+      <section className="w-full my-8 p-2 flex items-center justify-center h-[850px]">
+        <div className="flex flex-col relative w-[400px] items-center justify-evenly gap-4 rounded-lg p-10 [box-shadow:-4px_-43px_49px_-5px_rgba(148,96,10,0.24)]  xl:flex-row mb-10 xl:w-[1400px]">
           <InitalApresentation />
           <ImageComponent />
           <BorderBeam duration={12} size={80} className="via-white" />
         </div>
       </section>
 
-      <section className="w-full h-[600px]items-center my-10 p-3 xl:p-0">
+      {/* Tecnologias */}
+      <section className="w-full h-[800px] mt-10 items-center p-3 xl:p-0 xl:h-[560px]">
         <h1 className="text-white text-2xl text-center mb-2 xl:text-7xl xl:mb-4">
           Tecnologias
         </h1>
@@ -98,25 +100,27 @@ const Home = () => {
       </section>
 
       {/* Projetos */}
-      <section className="h-auto flex flex-col items-center mb-4 space-y-2 xl:m-30">
-        <h1 className="text-2xl text-white font-semibold xl:text-7xl mb-4 text-center">
+      <section className="flex flex-col items-center justify-center  space-y-2 xl:w-[800px] h-[850px]">
+        <h1 className="text-2xl text-white font-semibold xl:text-6xl mb-4 text-center">
           Projeto destaque
         </h1>
 
-        <div className="flex flex-col p-3 space-y-4 border  border-solid border-white rounded-sm">
+        <div className="flex flex-col w-[400px] items-center justify-center p-3 space-y-4 border border-solid border-white rounded-sm xl:w-[1200px]">
           <h1 className="text-blue-500 text-2xl font-semibold">McProcessSim</h1>
-          <p className="text-white">
-            Simulação completa de um ecossistema de autoatendimento para
-            fast-food. A aplicação gerencia desde a autenticação do usuário e
-            escolha do método de consumo (Delivery/Mesa) até o checkout
-            financeiro seguro integrado via Stripe, persistindo todo o histórico
-            de pedidos.
-          </p>
-          <div className="flex flex-col xl:flex xl:flex-row items-center justify-evenly h-auto">
+          <div className="xl:w-[50%]">
+            <p className="text-white">
+              Simulação completa de um ecossistema de autoatendimento para
+              fast-food. A aplicação gerencia desde a autenticação do usuário e
+              escolha do método de consumo (Delivery/Mesa) até o checkout
+              financeiro seguro integrado via Stripe, persistindo todo o
+              histórico de pedidos.
+            </p>
+          </div>
+          <div className="flex flex-col xl:flex xl:flex-row items-center justify-evenly gap-6">
             <Image
               src="/McProcessim/TelaInicial.png"
               alt="api-image"
-              width={650}
+              width={450}
               height={650}
               quality={100}
               className="mb-2 object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[450px]"
@@ -130,7 +134,7 @@ const Home = () => {
               className="mb-2 object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[450px]"
             />
           </div>
-          <div className="grid grid-cols-2 gap-1 xl:grid-cols-4">
+          <div className="grid grid-cols-2 gap-1 xl:grid-cols-4 xl:gap-4">
             <ShimmerButton className="shadow-2xl">
               <div className="flex gap-2">
                 <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
@@ -188,8 +192,8 @@ const Home = () => {
               </div>
             </ShimmerButton>
           </div>
-          <div className="flex gap-2">
-            <Button asChild className="bg-white w-[50%]">
+          <div className="flex gap-2 w-full items-center justify-center">
+            <Button asChild className="bg-white w-[50%] xl:w-[20%]">
               <Link
                 href="https://github.com/JudsonCiribelli/McProcessSim"
                 target="_blank"
@@ -197,12 +201,12 @@ const Home = () => {
                 Repositório
               </Link>
             </Button>
-            <Button asChild className="bg-white w-[50%]">
+            <Button asChild className="bg-white w-[50%] xl:w-[20%]">
               <Link href="/">Projeto</Link>
             </Button>
           </div>
           <Button
-            className="w-[460px] mt-0 mb-0 p-4 bg-blue-500  text-white xl:w-full xl:mt-4 xl:p-6"
+            className="w-full mt-0 mb-0 p-4 bg-blue-500  text-white xl:w-full xl:mt-4 xl:p-6"
             asChild
             variant="secondary"
           >
@@ -213,11 +217,11 @@ const Home = () => {
 
       {/* Educação */}
       <section className="w-full h-[900px] mt-10 p-3 bg-white mb-5">
-        <h1 className="text-black font-semibold text-2xl text-center mb-2 xl:text-7xl xl:mb-4">
+        <h1 className="text-black font-semibold text-2xl text-center mb-2 xl:text-6xl xl:my-4">
           Educação & Certificações
         </h1>
 
-        <div className="flex flex-col items-center w-full justify-center space-y-5 ">
+        <div className="flex flex-col items-center justify-center space-y-5 ">
           {/* Faculdade */}
           <div className="flex flex-col  w-[95%] xl: border border-black border-solid p-2 rounded-lg">
             <h1 className="text-xl font-semibold">
