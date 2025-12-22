@@ -6,7 +6,7 @@ import ProjectsComponents from "../_components/projectsComponent/projectsCompone
 
 const ProjectsPage = () => {
   return (
-    <section className="bg-black mt-2 mb-8 w-full xl:flex items-center flex-col justify-center">
+    <section className="bg-black mt-38 mb-8 w-full xl:flex items-center flex-col justify-center xl:mt-22">
       <h1 className="text-white text-lg text-center font-semibold py-2 my-5 xl:text-2xl">
         Meus Projetos
       </h1>
