@@ -57,7 +57,10 @@ const Home = () => {
         color={color}
       />
       {/* Texto */}
-      <section className="flex h-[750px] items-center justify-center w-full">
+      <section
+        className="flex h-[750px] items-center justify-center w-full"
+        id="home"
+      >
         <div className="flex flex-col items-center justify-center">
           {/* Nome */}
           <h1 className="text-white text-2xl font-normal xl:text-7xl">
@@ -76,7 +79,10 @@ const Home = () => {
       </section>
 
       {/* ABOUT */}
-      <section className="w-full my-8 p-2 flex items-center justify-center h-[850px]">
+      <section
+        className="w-full my-8 p-2 flex items-center justify-center h-[850px]"
+        id="about"
+      >
         <div className="flex flex-col relative w-[400px] items-center justify-evenly gap-4 rounded-lg p-10 [box-shadow:-4px_-43px_49px_-5px_rgba(148,96,10,0.24)]  xl:flex-row mb-10 xl:w-[1400px]">
           <InitalApresentation />
           <ImageComponent />
@@ -85,7 +91,10 @@ const Home = () => {
       </section>
 
       {/* Tecnologias */}
-      <section className="w-full h-[800px] mt-10 items-center p-3 xl:p-0 xl:h-[560px]">
+      <section
+        className="w-full h-[800px] mt-10 items-center p-3 xl:p-0 xl:h-[560px]"
+        id="technologies"
+      >
         <h1 className="text-white text-2xl text-center mb-2 xl:text-7xl xl:mb-4">
           Tecnologias
         </h1>
@@ -100,7 +109,10 @@ const Home = () => {
       </section>
 
       {/* Projetos */}
-      <section className="flex flex-col items-center justify-center  space-y-2 xl:w-[800px] h-[850px]">
+      <section
+        className="flex h-auto flex-col items-center justify-center  space-y-2 xl:w-[800px] xl:h-[850px]"
+        id="projects"
+      >
         <h1 className="text-2xl text-white font-semibold xl:text-6xl mb-4 text-center">
           Projeto destaque
         </h1>
@@ -216,7 +228,10 @@ const Home = () => {
       </section>
 
       {/* Educação */}
-      <section className="w-full h-[900px] mt-10 p-3 bg-white mb-5">
+      <section
+        className="w-full h-[900px] mt-10 p-3 bg-white mb-5"
+        id="education"
+      >
         <h1 className="text-black font-semibold text-2xl text-center mb-2 xl:text-6xl xl:my-4">
           Educação & Certificações
         </h1>
