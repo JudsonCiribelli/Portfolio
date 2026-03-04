@@ -230,7 +230,6 @@ const ProjectsPage = () => {
             </Button>
           </div>
         </div>
-
         {/* BarberPro */}
         <div className="flex flex-col p-3 space-y-4 border border-solid border-white rounded-sm m-1">
           <h1 className="text-blue-500 text-2xl font-semibold">BarberPro</h1>
