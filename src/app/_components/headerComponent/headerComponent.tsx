@@ -5,33 +5,39 @@ import LinkComponent from "../linksComponent/linkComponent";
 import { ArrowBigLeft } from "lucide-react";
 import { usePathname } from "next/navigation";
 
+const navLinks = [
+  { href: "#about", name: "Sobre" },
+  { href: "#technologies", name: "Tecnologias" },
+  { href: "#projects", name: "Projetos" },
+  { href: "#education", name: "Educação" },
+];
+
 const HeaderComponent = () => {
   const pathname = usePathname();
   const isHomePage = pathname === "/";
   return (
-    <header className="w-full py-4 fixed top-0 left-0 z-50 bg-black border-b border-gray-700 xl:flex items-center justify-center">
+    <header className="w-[430px] py-4 flex top-0 left-0 z-50 bg-black border-b border-gray-700 xl:fixed items-center justify-center  lg:w-full xl:w-full">
       {isHomePage ? (
-        <div className="grid grid-cols-6 gap-4 list-none xl:gap-8 w-full max-w-2xl px-4 xl:flex flex-row  items-center justify-between">
-          <div className="col-span-2 flex justify-center">
-            <LinkComponent href="#about" name="Sobre" />
+        <nav className="w-full max-w-3xl m-1">
+          <div className="grid grid-cols-4 gap-1 xl:flex xl:items-center xl:justify-between xl:gap-8 list-none">
+            {navLinks.map((link, index) => (
+              <div
+                key={link.href}
+                className={`flex justify-center ${
+                  index === 4 ? "col-span-2" : "col-span-1"
+                }`}
+              >
+                <div className="w-full max-w-[160px]">
+                  <LinkComponent
+                    href={link.href}
+                    name={link.name}
+                    className="w-full text-center"
+                  />
+                </div>
+              </div>
+            ))}
           </div>
-
-          <div className="col-span-2 flex justify-center">
-            <LinkComponent href="#technologies" name="Tecnologias" />
-          </div>
-
-          <div className="col-span-3 flex justify-center">
-            <LinkComponent href="#projects" name="Projetos" />
-          </div>
-
-          <div className="col-span-3 flex justify-center">
-            <LinkComponent href="#education" name="Educação" />
-          </div>
-
-          <div className="col-span-3 flex justify-center">
-            <LinkComponent href="#contact" name="Contato" />
-          </div>
-        </div>
+        </nav>
       ) : (
         <div className="w-full max-w-6xl px-4 flex items-center justify-start">
           <Link
