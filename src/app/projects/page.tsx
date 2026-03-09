@@ -6,13 +6,13 @@ import ProjectsComponents from "../_components/projectsComponent/projectsCompone
 
 const ProjectsPage = () => {
   return (
-    <section className="bg-black mt-38 mb-8 w-full xl:flex items-center flex-col justify-center xl:mt-22">
-      <h1 className="text-white text-lg text-center font-semibold py-2 my-5 xl:text-2xl">
+    <section className="bg-black my-4 w-full xl:mt-20">
+      <h1 className="text-white text-3xl text-center font-semibold py-2 mx-2  xl:text-2xl">
         Meus Projetos
       </h1>
-      <div className="w-full block flex-col space-y-4 xl:hidden xl:space-y-8">
+      <div className="max-w-[420px] block flex-col xl:hidden xl:w-full">
         {/* McProcessim */}
-        <div className="flex flex-col p-3 space-y-4  border border-solid border-white rounded-sm m-1">
+        <div className="flex flex-col my-2 p-3 space-y-4  border border-solid border-white rounded-sm m-1">
           <h1 className="text-blue-500 text-2xl font-semibold">McProcessSim</h1>
           <p className="text-white">
             Simulação completa de um ecossistema de autoatendimento para
@@ -23,36 +23,44 @@ const ProjectsPage = () => {
           </p>
           <div className="flex flex-col items-center gap-3">
             <Image
-              src="/McProcessim/imageMcProcessim.png"
+              src="/McProcessim/Mobile/INITIAL.png"
               alt="api-image"
               width={650}
               height={650}
               quality={100}
-              className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
+              className="object-cover rounded-xs w-full max-w-[400px] h-auto"
             />
             <Image
-              src="/McProcessim/TelaInicial.png"
+              src="/McProcessim/Mobile/RESTAURANT.png"
               alt="api-image"
               width={650}
               height={650}
               quality={100}
-              className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
+              className="object-cover rounded-xs w-full max-w-[400px] h-auto "
             />
             <Image
-              src="/McProcessim/TelaDoProduto.png"
+              src="/McProcessim/Mobile/PRODUCT.png"
               alt="api-image"
               width={650}
               height={650}
               quality={100}
-              className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
+              className="object-cover rounded-xs w-full max-w-[400px] h-auto "
             />
             <Image
-              src="/McProcessim/TelaDoPedido.png"
+              src="/McProcessim/Mobile/ORDERS.png"
               alt="api-image"
               width={650}
               height={650}
               quality={100}
-              className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
+              className="object-cover rounded-xs w-full max-w-[400px] h-auto "
+            />
+            <Image
+              src="/McProcessim/Mobile/ORDER-SUCCESS.png"
+              alt="api-image"
+              width={650}
+              height={650}
+              quality={100}
+              className="object-cover rounded-xs w-full max-w-[400px] h-auto "
             />
           </div>
           <h2 className="text-white text-sm font-semibold">
@@ -130,8 +138,9 @@ const ProjectsPage = () => {
             </Button>
           </div>
         </div>
+
         {/* LanchApp */}
-        <div className="flex flex-col p-3 space-y-4 border border-solid border-white rounded-sm m-1">
+        <div className="flex flex-col my-2 p-3 space-y-4 border border-solid border-white rounded-sm m-1">
           <h1 className="text-blue-500 text-2xl font-semibold">LanchApp</h1>
           <p className="text-white">
             Backend completo para gestão de pedidos de uma lanchonete/pizzaria,
@@ -230,8 +239,9 @@ const ProjectsPage = () => {
             </Button>
           </div>
         </div>
+
         {/* BarberPro */}
-        <div className="flex flex-col p-3 space-y-4 border border-solid border-white rounded-sm m-1">
+        <div className="flex flex-col my-2 p-3 space-y-4 border border-solid border-white rounded-sm m-1">
           <h1 className="text-blue-500 text-2xl font-semibold">BarberPro</h1>
           <p className="text-white">
             Plataforma completa de agendamento online para barbearias. O sistema
@@ -242,7 +252,15 @@ const ProjectsPage = () => {
           </p>
           <div className="flex flex-col items-center justify-center gap-3">
             <Image
-              src="/Barber-Pro/HomePage.png"
+              src="/Barber-Pro/Mobile/Dashboard.png"
+              alt="login page e logout page"
+              width={650}
+              height={650}
+              quality={100}
+              className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
+            />
+            <Image
+              src="/Barber-Pro/Mobile/Barber.png"
               alt="Barber pro home page"
               width={650}
               height={650}
@@ -250,7 +268,7 @@ const ProjectsPage = () => {
               className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
             />
             <Image
-              src="/Barber-Pro/agendamentos.png"
+              src="/Barber-Pro/Mobile/Book.png"
               alt="Agendamentos"
               width={650}
               height={650}
@@ -258,16 +276,8 @@ const ProjectsPage = () => {
               className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
             />
             <Image
-              src="/Barber-Pro/avaliacao.png"
+              src="/Barber-Pro/Mobile/Book-info.png"
               alt="Avaliação"
-              width={650}
-              height={650}
-              quality={100}
-              className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
-            />
-            <Image
-              src="/Barber-Pro/login&logout.png"
-              alt="login page e logout page"
               width={650}
               height={650}
               quality={100}
@@ -335,7 +345,304 @@ const ProjectsPage = () => {
             </Button>
           </div>
         </div>
+
+        {/* Ecommerce */}
+        <div className="flex flex-col my-2 p-3 space-y-4 border border-solid border-white rounded-sm m-1">
+          <h1 className="text-blue-500 text-2xl font-semibold">Clothing</h1>
+          <p className="text-white">
+            O Clothing é uma plataforma de e-commerce moderna focada em
+            vestuário, construída com foco em performance e experiência do
+            usuário (UX). A aplicação permite que usuários naveguem por
+            coleções, gerenciem um carrinho de compras em tempo real e finalizem
+            pedidos através de um fluxo de checkout seguro e profissional.
+          </p>
+
+          {/* Imagens */}
+          <div className="flex flex-col items-center justify-center gap-3">
+            <Image
+              src="/Ecommerce/Mobile/HOME.png"
+              alt="login page e logout page"
+              width={650}
+              height={650}
+              quality={100}
+              className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
+            />
+
+            <Image
+              src="/Ecommerce/Mobile/SHOES.png"
+              alt="login page e logout page"
+              width={650}
+              height={650}
+              quality={100}
+              className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
+            />
+
+            <Image
+              src="/Ecommerce/Mobile/LOGIN.png"
+              alt="login page e logout page"
+              width={650}
+              height={650}
+              quality={100}
+              className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
+            />
+
+            <Image
+              src="/Ecommerce/Mobile/REGISTER.png"
+              alt="login page e logout page"
+              width={650}
+              height={650}
+              quality={100}
+              className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
+            />
+
+            <Image
+              src="/Ecommerce/Mobile/CART.png"
+              alt="login page e logout page"
+              width={650}
+              height={650}
+              quality={100}
+              className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
+            />
+          </div>
+
+          <h2 className="text-white text-sm font-semibold">
+            Tecnologias utilizadas
+          </h2>
+
+          {/* Tecnologias */}
+          <div className="grid grid-cols-2 gap-1">
+            <ShimmerButton className="shadow-2xl">
+              <div className="flex gap-2">
+                <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+                  React
+                </span>
+                <Image
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                  width={20}
+                  height={20}
+                  alt="Node icon"
+                />
+              </div>
+            </ShimmerButton>
+
+            <ShimmerButton className="shadow-2xl">
+              <div className="flex items-center justify-center gap-1">
+                <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+                  Typerscript
+                </span>
+                <Image
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+                  width={20}
+                  height={20}
+                  alt="ts icon"
+                />
+              </div>
+            </ShimmerButton>
+
+            <ShimmerButton className="shadow-2xl">
+              <div className="flex items-center justify-center gap-1 ml-0">
+                <span className="whitespace-pre-wrap text-center text-xs font-normal leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+                  Styled Component
+                </span>
+                <Image
+                  src="/Icons/Styledcomponents.png"
+                  width={20}
+                  height={20}
+                  alt="Styled Components"
+                  className="bg-white rounded-lg"
+                />
+              </div>
+            </ShimmerButton>
+
+            <ShimmerButton className="shadow-2xl">
+              <div className="flex items-center justify-center gap-1 ml-0">
+                <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+                  Firebase
+                </span>
+                <Image
+                  src="/Icons/Firebase.png"
+                  width={20}
+                  height={20}
+                  alt="Firebase icon"
+                />
+              </div>
+            </ShimmerButton>
+          </div>
+
+          {/* Repositorio */}
+          <div className="flex gap-2">
+            <Button asChild className="bg-white w-[50%]">
+              <Link
+                href="https://github.com/JudsonCiribelli/McProcessSim"
+                target="_blank"
+              >
+                Repositório
+              </Link>
+            </Button>
+            <Button asChild className="bg-white w-[50%]">
+              <Link href="/">Projeto</Link>
+            </Button>
+          </div>
+        </div>
+
+        {/* SportCars */}
+        <div className="flex flex-col my-2 p-3 space-y-4 border border-solid border-white rounded-sm m-1">
+          <h1 className="text-blue-500 text-2xl font-semibold">
+            SportCars - Marketplace
+          </h1>
+          <p className="text-white">
+            Marketplace completo de automóveis focado em proporcionar uma
+            experiência fluida entre compradores e vendedores. O projeto simula
+            um ecossistema real de e-commerce, permitindo desde a navegação
+            intuitiva de anúncios até a gestão completa de inventário pelos
+            usuários. Possui Autenticação Segura, Implementação de login via
+            E-mail/Senha e Social Login (Google), garantindo flexibilidade e
+            segurança no acesso. Sistema completo onde o usuário autenticado
+            pode cadastrar, editar e remover seus próprios veículos, com upload
+            dinâmico de imagens e dados técnicos. Canal direto de comunicação
+            entre interessados e vendedores para agilizar o processo de venda.
+          </p>
+
+          <div className="flex flex-col items-center justify-center gap-3">
+            <Image
+              src="/SportCars/Mobile/DASHBOARD.png"
+              alt="login page e logout page"
+              width={650}
+              height={650}
+              quality={100}
+              className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
+            />
+
+            <Image
+              src="/SportCars/Mobile/CAR.png"
+              alt="login page e logout page"
+              width={650}
+              height={650}
+              quality={100}
+              className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
+            />
+
+            <Image
+              src="/SportCars/Mobile/REGISTER-CAR.png"
+              alt="login page e logout page"
+              width={650}
+              height={650}
+              quality={100}
+              className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
+            />
+
+            <Image
+              src="/SportCars/Mobile/SELLS.png"
+              alt="login page e logout page"
+              width={650}
+              height={650}
+              quality={100}
+              className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
+            />
+          </div>
+
+          <div className="grid grid-cols-2 gap-1">
+            <ShimmerButton className="shadow-2xl">
+              <div className="flex gap-2">
+                <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+                  React
+                </span>
+                <Image
+                  src="/Icons/React.png"
+                  width={20}
+                  height={20}
+                  alt="React icon"
+                />
+              </div>
+            </ShimmerButton>
+
+            <ShimmerButton className="shadow-2xl">
+              <div className="flex gap-2">
+                <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+                  Vite
+                </span>
+                <Image
+                  src="/Icons/Vitejs.png"
+                  width={20}
+                  height={20}
+                  alt="Vite icon"
+                />
+              </div>
+            </ShimmerButton>
+
+            <ShimmerButton className="shadow-2xl">
+              <div className="flex gap-2">
+                <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+                  Typescript
+                </span>
+                <Image
+                  src="/Icons/Typescript.png"
+                  width={20}
+                  height={20}
+                  alt="Typescript icon"
+                />
+              </div>
+            </ShimmerButton>
+
+            <ShimmerButton className="shadow-2xl">
+              <div className="flex gap-2">
+                <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+                  Firebase
+                </span>
+                <Image
+                  src="/Icons/Firebase.png"
+                  width={20}
+                  height={20}
+                  alt="Firebase icon"
+                />
+              </div>
+            </ShimmerButton>
+
+            <ShimmerButton className="shadow-2xl">
+              <div className="flex gap-2">
+                <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+                  Tailwind
+                </span>
+                <Image
+                  src="/Icons/Tailwindcss.png"
+                  width={20}
+                  height={20}
+                  alt="Firebase icon"
+                />
+              </div>
+            </ShimmerButton>
+
+            <ShimmerButton className="shadow-2xl">
+              <div className="flex gap-2">
+                <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+                  Zod
+                </span>
+                <Image
+                  src="/Icons/Zod.png"
+                  width={20}
+                  height={20}
+                  alt="Firebase icon"
+                />
+              </div>
+            </ShimmerButton>
+          </div>
+
+          <div className="flex gap-2">
+            <Button asChild className="bg-white w-[50%]">
+              <Link
+                href="https://github.com/JudsonCiribelli/McProcessSim"
+                target="_blank"
+              >
+                Repositório
+              </Link>
+            </Button>
+            <Button asChild className="bg-white w-[50%]">
+              <Link href="/">Projeto</Link>
+            </Button>
+          </div>
+        </div>
       </div>
+
       <div className="hidden my-10 xl:block">
         <div className=" flex items-center justify-center">
           <ProjectsComponents />
