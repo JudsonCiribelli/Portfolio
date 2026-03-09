@@ -12,13 +12,13 @@ const imageStyle = {
   height: "500px",
 };
 
-const McProcessimComponent = () => {
+const QuickBiteComponent = () => {
   return (
     <Carousel className="w-[45%] h-[600px]">
       <CarouselContent>
         <CarouselItem>
           <Image
-            src="/McProcessim/Mobile/INITIAL.png"
+            src="/Quick-Bite/Dashboard.png"
             alt="project image"
             width={900}
             height={900}
@@ -28,9 +28,9 @@ const McProcessimComponent = () => {
           />
         </CarouselItem>
 
-        <CarouselItem className="text-white">
+        <CarouselItem>
           <Image
-            src="/McProcessim/Mobile/RESTAURANT.png"
+            src="/Quick-Bite/Cart.png"
             alt="project image"
             width={900}
             height={900}
@@ -40,9 +40,9 @@ const McProcessimComponent = () => {
           />
         </CarouselItem>
 
-        <CarouselItem className="text-white">
+        <CarouselItem>
           <Image
-            src="/McProcessim/Mobile/PRODUCT.png"
+            src="/Quick-Bite/Product.png"
             alt="project image"
             width={900}
             height={900}
@@ -52,21 +52,9 @@ const McProcessimComponent = () => {
           />
         </CarouselItem>
 
-        <CarouselItem className="text-white">
+        <CarouselItem className="flex items-center justify-center">
           <Image
-            src="/McProcessim/Mobile/ORDERS.png"
-            alt="project image"
-            width={900}
-            height={900}
-            style={imageStyle}
-            quality={100}
-            className="object-cover rounded-lg"
-          />
-        </CarouselItem>
-
-        <CarouselItem className="text-white">
-          <Image
-            src="/McProcessim/Mobile/ORDER-SUCCESS.png"
+            src="/Quick-Bite/Order.png"
             alt="project image"
             width={900}
             height={900}
@@ -82,4 +70,4 @@ const McProcessimComponent = () => {
   );
 };
 
-export default McProcessimComponent;
+export default QuickBiteComponent;

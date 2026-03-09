@@ -1,10 +1,10 @@
 import {
   Carousel,
-  CarouselNext,
-  CarouselPrevious,
   CarouselContent,
   CarouselItem,
-} from "../../../_components/ui/carousel";
+  CarouselNext,
+  CarouselPrevious,
+} from "@/app/_components/ui/carousel";
 import Image from "next/image";
 
 const imageStyle = {
@@ -12,13 +12,13 @@ const imageStyle = {
   height: "500px",
 };
 
-const McProcessimComponent = () => {
+const EcommerceComponent = () => {
   return (
     <Carousel className="w-[45%] h-[600px]">
       <CarouselContent>
         <CarouselItem>
           <Image
-            src="/McProcessim/Mobile/INITIAL.png"
+            src="/Ecommerce/Desktop/HOME.png"
             alt="project image"
             width={900}
             height={900}
@@ -28,9 +28,9 @@ const McProcessimComponent = () => {
           />
         </CarouselItem>
 
-        <CarouselItem className="text-white">
+        <CarouselItem>
           <Image
-            src="/McProcessim/Mobile/RESTAURANT.png"
+            src="/Ecommerce/Desktop/HAT.png"
             alt="project image"
             width={900}
             height={900}
@@ -40,9 +40,9 @@ const McProcessimComponent = () => {
           />
         </CarouselItem>
 
-        <CarouselItem className="text-white">
+        <CarouselItem>
           <Image
-            src="/McProcessim/Mobile/PRODUCT.png"
+            src="/Ecommerce/Desktop/CART.png"
             alt="project image"
             width={900}
             height={900}
@@ -52,9 +52,9 @@ const McProcessimComponent = () => {
           />
         </CarouselItem>
 
-        <CarouselItem className="text-white">
+        <CarouselItem>
           <Image
-            src="/McProcessim/Mobile/ORDERS.png"
+            src="/Ecommerce/Desktop/LOGIN.png"
             alt="project image"
             width={900}
             height={900}
@@ -64,9 +64,9 @@ const McProcessimComponent = () => {
           />
         </CarouselItem>
 
-        <CarouselItem className="text-white">
+        <CarouselItem>
           <Image
-            src="/McProcessim/Mobile/ORDER-SUCCESS.png"
+            src="/Ecommerce/Desktop/REGISTER.png"
             alt="project image"
             width={900}
             height={900}
@@ -82,4 +82,4 @@ const McProcessimComponent = () => {
   );
 };
 
-export default McProcessimComponent;
+export default EcommerceComponent;

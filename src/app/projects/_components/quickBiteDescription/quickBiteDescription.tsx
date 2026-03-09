@@ -3,24 +3,26 @@ import { ShimmerButton } from "@/app/magicui/shimmer-button";
 import Image from "next/image";
 import Link from "next/link";
 
-const McProcessimDescription = () => {
+const QuickBiteDescription = () => {
   return (
     <div className="p-4 space-y-6 flex flex-col">
       <h1 className="text-blue-500 text-xl mb-2 font-semibold">
-        McProcessim - Sistema de autoatendimento
+        Quick Bite - Ecossistema de Delivery
       </h1>
       <p className="text-white text-sm">
-        Este projeto foi desenvolvido para simular a experiência completa de
-        autoatendimento, reproduzindo a jornada real de compra em grandes
-        franquias de fast-food. O sistema permite que o usuário realize login,
-        personalize seu método de consumo, escolhendo entre retirada, delivery
-        ou mesa e montando seu pedido de forma dinâmica. Além disso, a aplicação
-        se destaca pela integração segura com pagamentos via Stripe, processando
-        transações reais e validando o checkout financeiro instantaneamente.
-        Todos os pedidos realizados ficam salvos em um histórico detalhado,
-        permitindo consulta posterior. O foco do projeto é demonstrar um fluxo
-        de e-commerce de ponta a ponta, unindo uma navegação intuitiva com a
-        complexidade e segurança necessária para transações financeiras.
+        Este projeto é uma reprodução funcional do iFood, criada com o objetivo
+        de praticar e demonstrar o desenvolvimento de uma aplicação completa de
+        delivery. O sistema permite o cadastro de restaurantes e produtos, login
+        de usuários, adição de itens ao carrinho, finalização de pedidos e
+        marcação de restaurantes favoritos. Entre as principais funções estão:
+        Autenticação e criação de contas de usuário. Exibição dos restaurantes
+        disponíveis e seus respectivos cardápios. Adição e remoção de produtos
+        no carrinho com cálculo automático do total. Confirmação de pedidos e
+        acompanhamento básico do status. Possibilidade de favoritar restaurantes
+        para acesso rápido. O projeto foi pensado para unir boa estrutura de
+        código, organização e experiência do usuário, buscando oferecer uma
+        navegação fluida e próxima do funcionamento real de um aplicativo de
+        delivery.
       </p>
       <div className="space-y-2">
         <h2 className="text-blue-500 text-lg font-semibold">
@@ -36,7 +38,7 @@ const McProcessimDescription = () => {
             />
           </ShimmerButton>
 
-          <ShimmerButton className="shadow-2xl">
+          <ShimmerButton className="shadow-2xl ">
             <Image
               src="/Icons/Nextjs.png"
               alt="tec-icons"
@@ -57,17 +59,7 @@ const McProcessimDescription = () => {
 
           <ShimmerButton className="shadow-2xl">
             <Image
-              src="/Icons/Prisma.png"
-              alt="tec-icons"
-              width={20}
-              height={20}
-              className="bg-white rounded-lg"
-            />
-          </ShimmerButton>
-
-          <ShimmerButton className="shadow-2xl">
-            <Image
-              src="/Icons/Stripe.png"
+              src="/Icons/auth-js-seeklogo.png"
               alt="tec-icons"
               width={20}
               height={20}
@@ -90,7 +82,7 @@ const McProcessimDescription = () => {
           <Link
             className="text-white"
             target="_blank"
-            href="https://github.com/JudsonCiribelli/Inventory-Manager"
+            href="https://github.com/JudsonCiribelli/QuickBiteClone"
           >
             Link do código
           </Link>
@@ -104,7 +96,7 @@ const McProcessimDescription = () => {
           <Link
             className="text-white"
             target="_blank"
-            href="https://github.com/JudsonCiribelli/Inventory-Manager"
+            href="https://github.com/JudsonCiribelli/QuickBiteClone"
           >
             Veja o projeto em tempo real
           </Link>
@@ -114,4 +106,4 @@ const McProcessimDescription = () => {
   );
 };
 
-export default McProcessimDescription;
+export default QuickBiteDescription;

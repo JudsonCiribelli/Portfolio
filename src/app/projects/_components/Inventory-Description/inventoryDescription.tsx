@@ -1,26 +1,27 @@
-import { Button } from "@/app/_components/ui/button";
 import { ShimmerButton } from "@/app/magicui/shimmer-button";
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "../../../_components/ui/button";
 
-const McProcessimDescription = () => {
+const InventoryDescription = () => {
   return (
     <div className="p-4 space-y-6 flex flex-col">
       <h1 className="text-blue-500 text-xl mb-2 font-semibold">
-        McProcessim - Sistema de autoatendimento
+        Inventory Manager - Gestão de estoque
       </h1>
       <p className="text-white text-sm">
-        Este projeto foi desenvolvido para simular a experiência completa de
-        autoatendimento, reproduzindo a jornada real de compra em grandes
-        franquias de fast-food. O sistema permite que o usuário realize login,
-        personalize seu método de consumo, escolhendo entre retirada, delivery
-        ou mesa e montando seu pedido de forma dinâmica. Além disso, a aplicação
-        se destaca pela integração segura com pagamentos via Stripe, processando
-        transações reais e validando o checkout financeiro instantaneamente.
-        Todos os pedidos realizados ficam salvos em um histórico detalhado,
-        permitindo consulta posterior. O foco do projeto é demonstrar um fluxo
-        de e-commerce de ponta a ponta, unindo uma navegação intuitiva com a
-        complexidade e segurança necessária para transações financeiras.
+        Este projeto foi desenvolvido para facilitar o controle de produtos e
+        acompanhar o desempenho das vendas de forma prática e visual. O sistema
+        permite adicionar, editar e excluir produtos com informações como nome,
+        valor e quantidade em estoque. Além disso, há uma seção de vendas, onde
+        é possível registrar novas vendas com base nos produtos cadastrados,
+        editar ou remover registros quando necessário. A aplicação também conta
+        com uma dashboard interativa, que apresenta gráficos dinâmicos com dados
+        em tempo real exibindo o lucro total diário e mensal, além de
+        informações detalhadas sobre o valor e a data de cada venda. O foco do
+        projeto é oferecer uma interface intuitiva e organizada, unindo gestão
+        de estoque eficiente e acompanhamento visual dos resultados financeiros,
+        de forma simples e acessível.
       </p>
       <div className="space-y-2">
         <h2 className="text-blue-500 text-lg font-semibold">
@@ -67,7 +68,7 @@ const McProcessimDescription = () => {
 
           <ShimmerButton className="shadow-2xl">
             <Image
-              src="/Icons/Stripe.png"
+              src="/Icons/Tailwindcss.png"
               alt="tec-icons"
               width={20}
               height={20}
@@ -76,7 +77,7 @@ const McProcessimDescription = () => {
 
           <ShimmerButton className="shadow-2xl">
             <Image
-              src="/Icons/Tailwindcss.png"
+              src="/Icons/Zod.png"
               alt="tec-icons"
               width={20}
               height={20}
@@ -114,4 +115,4 @@ const McProcessimDescription = () => {
   );
 };
 
-export default McProcessimDescription;
+export default InventoryDescription;

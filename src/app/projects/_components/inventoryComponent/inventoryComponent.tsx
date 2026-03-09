@@ -12,13 +12,13 @@ const imageStyle = {
   height: "500px",
 };
 
-const McProcessimComponent = () => {
+const InvetoryComponent = () => {
   return (
     <Carousel className="w-[45%] h-[600px]">
       <CarouselContent>
         <CarouselItem>
           <Image
-            src="/McProcessim/Mobile/INITIAL.png"
+            src="/Inventory-Manager/Desktop/DASHBOARD.png"
             alt="project image"
             width={900}
             height={900}
@@ -30,7 +30,7 @@ const McProcessimComponent = () => {
 
         <CarouselItem className="text-white">
           <Image
-            src="/McProcessim/Mobile/RESTAURANT.png"
+            src="/Inventory-Manager/Desktop/PRODUCT.png"
             alt="project image"
             width={900}
             height={900}
@@ -42,7 +42,7 @@ const McProcessimComponent = () => {
 
         <CarouselItem className="text-white">
           <Image
-            src="/McProcessim/Mobile/PRODUCT.png"
+            src="/Inventory-Manager/Desktop/ADD-PRODUCT.png"
             alt="project image"
             width={900}
             height={900}
@@ -54,7 +54,7 @@ const McProcessimComponent = () => {
 
         <CarouselItem className="text-white">
           <Image
-            src="/McProcessim/Mobile/ORDERS.png"
+            src="/Inventory-Manager/Desktop/DELETE-PRODUCT.png"
             alt="project image"
             width={900}
             height={900}
@@ -66,7 +66,31 @@ const McProcessimComponent = () => {
 
         <CarouselItem className="text-white">
           <Image
-            src="/McProcessim/Mobile/ORDER-SUCCESS.png"
+            src="/Inventory-Manager/Desktop/EDIT-PRODUCT.png"
+            alt="project image"
+            width={900}
+            height={900}
+            style={imageStyle}
+            quality={100}
+            className="object-cover rounded-lg"
+          />
+        </CarouselItem>
+
+        <CarouselItem className="text-white">
+          <Image
+            src="/Inventory-Manager/Desktop/SALES.png"
+            alt="project image"
+            width={900}
+            height={900}
+            style={imageStyle}
+            quality={100}
+            className="object-cover rounded-lg"
+          />
+        </CarouselItem>
+
+        <CarouselItem className="text-white">
+          <Image
+            src="/Inventory-Manager/Desktop/NEW-SALES.png"
             alt="project image"
             width={900}
             height={900}
@@ -82,4 +106,4 @@ const McProcessimComponent = () => {
   );
 };
 
-export default McProcessimComponent;
+export default InvetoryComponent;

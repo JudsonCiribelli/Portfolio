@@ -1,10 +1,10 @@
 import {
   Carousel,
-  CarouselNext,
-  CarouselPrevious,
   CarouselContent,
   CarouselItem,
-} from "../../../_components/ui/carousel";
+  CarouselNext,
+  CarouselPrevious,
+} from "@/app/_components/ui/carousel";
 import Image from "next/image";
 
 const imageStyle = {
@@ -12,13 +12,13 @@ const imageStyle = {
   height: "500px",
 };
 
-const McProcessimComponent = () => {
+const BarberProComponent = () => {
   return (
     <Carousel className="w-[45%] h-[600px]">
       <CarouselContent>
         <CarouselItem>
           <Image
-            src="/McProcessim/Mobile/INITIAL.png"
+            src="/Barber-Pro/Desktop/Dashboard.png"
             alt="project image"
             width={900}
             height={900}
@@ -30,7 +30,7 @@ const McProcessimComponent = () => {
 
         <CarouselItem className="text-white">
           <Image
-            src="/McProcessim/Mobile/RESTAURANT.png"
+            src="/Barber-Pro/Desktop/book.png"
             alt="project image"
             width={900}
             height={900}
@@ -42,7 +42,7 @@ const McProcessimComponent = () => {
 
         <CarouselItem className="text-white">
           <Image
-            src="/McProcessim/Mobile/PRODUCT.png"
+            src="/Barber-Pro/Desktop/Barber.png"
             alt="project image"
             width={900}
             height={900}
@@ -54,19 +54,7 @@ const McProcessimComponent = () => {
 
         <CarouselItem className="text-white">
           <Image
-            src="/McProcessim/Mobile/ORDERS.png"
-            alt="project image"
-            width={900}
-            height={900}
-            style={imageStyle}
-            quality={100}
-            className="object-cover rounded-lg"
-          />
-        </CarouselItem>
-
-        <CarouselItem className="text-white">
-          <Image
-            src="/McProcessim/Mobile/ORDER-SUCCESS.png"
+            src="/Barber-Pro/Desktop/Login.png"
             alt="project image"
             width={900}
             height={900}
@@ -82,4 +70,4 @@ const McProcessimComponent = () => {
   );
 };
 
-export default McProcessimComponent;
+export default BarberProComponent;
