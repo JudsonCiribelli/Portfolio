@@ -4,12 +4,18 @@ interface LinkComponentProps {
   href: string;
   name: string;
   target?: string;
+  className: string;
 }
 
-const LinkComponent = ({ href, name, target }: LinkComponentProps) => {
+const LinkComponent = ({
+  href,
+  name,
+  target,
+  className,
+}: LinkComponentProps) => {
   return (
-    <Link href={href} target={target}>
-      <li className="text-lg border border-white rounded-lg p-2 text-white">
+    <Link href={href} target={target} className={className}>
+      <li className="text-sm border border-white rounded-lg p-2 text-white">
         {name}
       </li>
     </Link>
