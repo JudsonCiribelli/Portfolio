@@ -101,7 +101,7 @@ const SportCarsDescription = () => {
           <Link
             className="text-white"
             target="_blank"
-            href="https://github.com/JudsonCiribelli/Inventory-Manager"
+            href="https://web-cars-drab.vercel.app/"
           >
             Veja o projeto em tempo real
           </Link>

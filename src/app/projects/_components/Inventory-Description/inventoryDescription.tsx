@@ -105,7 +105,7 @@ const InventoryDescription = () => {
           <Link
             className="text-white"
             target="_blank"
-            href="https://github.com/JudsonCiribelli/Inventory-Manager"
+            href="https://inventory-manager-green-psi.vercel.app/"
           >
             Veja o projeto em tempo real
           </Link>

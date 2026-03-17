@@ -90,7 +90,7 @@ const McProcessimDescription = () => {
           <Link
             className="text-white"
             target="_blank"
-            href="https://github.com/JudsonCiribelli/Inventory-Manager"
+            href="https://github.com/JudsonCiribelli/McProcessSim"
           >
             Link do código
           </Link>
@@ -104,7 +104,7 @@ const McProcessimDescription = () => {
           <Link
             className="text-white"
             target="_blank"
-            href="https://github.com/JudsonCiribelli/Inventory-Manager"
+            href="https://mc-process-sim.vercel.app/fsw-donalds"
           >
             Veja o projeto em tempo real
           </Link>

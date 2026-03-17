@@ -54,6 +54,7 @@ const EcommerceDescription = () => {
               alt="tec-icons"
               width={20}
               height={20}
+              className="bg-white rounded-lg"
             />
           </ShimmerButton>
 
@@ -87,7 +88,7 @@ const EcommerceDescription = () => {
           <Link
             className="text-white"
             target="_blank"
-            href="https://github.com/JudsonCiribelli/Inventory-Manager"
+            href="https://ecommerce-one-lake-72.vercel.app/"
           >
             Veja o projeto em tempo real
           </Link>

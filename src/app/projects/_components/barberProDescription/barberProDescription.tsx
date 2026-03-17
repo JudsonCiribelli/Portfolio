@@ -96,7 +96,7 @@ const BarberProDescription = () => {
           <Link
             className="text-white"
             target="_blank"
-            href="https://github.com/JudsonCiribelli/Inventory-Manager"
+            href="https://github.com/JudsonCiribelli/fsw-barber"
           >
             Link do código
           </Link>
@@ -110,7 +110,7 @@ const BarberProDescription = () => {
           <Link
             className="text-white"
             target="_blank"
-            href="https://github.com/JudsonCiribelli/Inventory-Manager"
+            href="https://fsw-barber-4hnk47lhq-judsons-projects-d573a9e8.vercel.app/"
           >
             Veja o projeto em tempo real
           </Link>
