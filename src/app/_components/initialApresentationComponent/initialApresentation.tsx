@@ -5,7 +5,7 @@ const InitalApresentation = () => {
   return (
     <div className="flex flex-col max-w-[400px] gap-4 xl:max-w-[800px]">
       <h1 className="text-white text-4xl font-normal">Sobre mim</h1>
-      <p className="text-white text-lg xl:text-2xl">
+      <p className="text-white text-lg font-normal xl:text-lg ">
         Mais do que apenas escrever código, sou um profissional movido pela
         resolução de problemas. Graduado em Interdisciplinar em Ciências e
         Tecnologia , trago para a tecnologia a mesma disciplina inegociável que
