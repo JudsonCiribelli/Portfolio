@@ -1,5 +1,16 @@
+import {
+  AlertDialog,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/app/_components/ui/alert-dialog";
 import { Button } from "@/app/_components/ui/button";
 import { ShimmerButton } from "@/app/magicui/shimmer-button";
+import { TriangleAlert } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -88,19 +99,30 @@ const QuickBiteDescription = () => {
           </Link>
         </Button>
 
-        <Button
-          disabled
-          asChild
-          className="bg-blue-600 text-lg hover:bg-blue-600"
-        >
-          <Link
-            className="text-white"
-            target="_blank"
-            href="https://github.com/JudsonCiribelli/QuickBiteClone"
-          >
-            Veja o projeto em tempo real
-          </Link>
-        </Button>
+        <AlertDialog>
+          <AlertDialogTrigger asChild>
+            <Button className="bg-blue-600 text-lg cursor-pointer text-white hover:bg-blue-600">
+              Veja o projeto em tempo real
+            </Button>
+          </AlertDialogTrigger>
+          <AlertDialogContent className="bg-white text-black">
+            <AlertDialogHeader>
+              <div className="flex flex-col items-center justify-center space-y-4">
+                <TriangleAlert size={60} />
+                <AlertDialogTitle>Projeto em Manutenção</AlertDialogTitle>
+                <AlertDialogDescription>
+                  Este deploy está temporariamente offline para manutenção
+                  programada e atualização de banco de dados. O código continua
+                  disponível para revisão técnica no meu GitHub. Agradeço a
+                  compreensão!
+                </AlertDialogDescription>
+              </div>
+            </AlertDialogHeader>
+            <AlertDialogFooter>
+              <AlertDialogCancel>Fechar</AlertDialogCancel>
+            </AlertDialogFooter>
+          </AlertDialogContent>
+        </AlertDialog>
       </div>
     </div>
   );
