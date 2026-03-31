@@ -1,6 +1,9 @@
+import { TriangleAlert } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+
 import {
   AlertDialog,
-  AlertDialogAction,
   AlertDialogCancel,
   AlertDialogContent,
   AlertDialogDescription,
@@ -11,9 +14,6 @@ import {
 } from "@/app/_components/ui/alert-dialog";
 import { Button } from "@/app/_components/ui/button";
 import { ShimmerButton } from "@/app/magicui/shimmer-button";
-import { TriangleAlert } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
 
 export interface TechIcon {
   id: string;

@@ -1,8 +1,9 @@
+import { ExternalLink, Github } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "../ui/button";
-import { ExternalLink, Github } from "lucide-react";
+
 import ProjectsComponents from "../projectsComponent/projectsComponent";
+import { Button } from "../ui/button";
 
 const FeaturedProjectSection = () => {
   const techStack = [

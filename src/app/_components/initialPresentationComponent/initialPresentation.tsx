@@ -1,5 +1,6 @@
-import { ShinyButton } from "@/app/magicui/shiny-button";
 import Link from "next/link";
+
+import { ShinyButton } from "@/app/magicui/shiny-button";
 
 const InitalPresentation = () => {
   return (

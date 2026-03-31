@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ShimmerButton } from "@/app/magicui/shimmer-button";
+
 import { Button } from "@/app/_components/ui/button";
+import { ShimmerButton } from "@/app/magicui/shimmer-button";
 
 interface Tech {
   name: string;

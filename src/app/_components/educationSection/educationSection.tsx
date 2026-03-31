@@ -1,4 +1,5 @@
 import { BookOpen, Code2, GraduationCap } from "lucide-react";
+
 import DialogComponent from "../dialogComponent/dialogComponent";
 
 const EducationSection = () => {

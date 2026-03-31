@@ -1,9 +1,10 @@
 "use client";
 
-import Link from "next/link";
-import LinkComponent from "../linksComponent/linkComponent";
 import { ArrowBigLeft } from "lucide-react";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
+
+import LinkComponent from "../linksComponent/linkComponent";
 
 const navLinks = [
   { href: "#about", name: "Sobre" },

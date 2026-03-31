@@ -1,4 +1,11 @@
 import { BorderBeam } from "@/app/magicui/border-beam";
+import ProjectCarousel, {
+  CarouselImage,
+} from "@/app/projects/_components/ProjectCarousel/ProjectsCarousel";
+import ProjectsDescription, {
+  TechIcon,
+} from "@/app/projects/_components/ProjectDescription/ProjectsDescription";
+
 import {
   Carousel,
   CarouselContent,
@@ -6,12 +13,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "../ui/carousel";
-import ProjectsDescription, {
-  TechIcon,
-} from "@/app/projects/_components/ProjectDescription/ProjectsDescription";
-import ProjectCarousel, {
-  CarouselImage,
-} from "@/app/projects/_components/ProjectCarousel/ProjectsCarousel";
 
 interface PortfolioProject {
   id: string;

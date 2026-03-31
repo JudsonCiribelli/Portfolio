@@ -1,5 +1,6 @@
-import { ShimmerButton } from "@/app/magicui/shimmer-button";
 import Image from "next/image";
+
+import { ShimmerButton } from "@/app/magicui/shimmer-button";
 
 const TechnologiesComponent = () => {
   return (

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import {
   Carousel,
   CarouselContent,
@@ -5,7 +7,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/app/_components/ui/carousel";
-import Image from "next/image";
 
 const imageStyle = {
   width: "1080px",

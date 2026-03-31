@@ -1,7 +1,8 @@
 "use client";
-import { Particles } from "@/app/magicui/particles";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+
+import { Particles } from "@/app/magicui/particles";
 
 export const BackgroundParticles = () => {
   const { resolvedTheme } = useTheme();
