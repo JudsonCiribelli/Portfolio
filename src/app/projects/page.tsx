@@ -1,652 +1,210 @@
-import Image from "next/image";
-import { ShimmerButton } from "../magicui/shimmer-button";
-import { Button } from "../_components/ui/button";
-import Link from "next/link";
 import ProjectsComponents from "../_components/projectsComponent/projectsComponent";
+import MobileProjectCard from "./_components/mobileProjects/mobileProjects";
+
+const mobileProjectsData = [
+  {
+    id: "mcprocessim",
+    title: "McProcessSim",
+    description:
+      "Simulação completa de um ecossistema de autoatendimento para fast-food. A aplicação gerencia desde a autenticação do usuário e escolha do método de consumo (Delivery/Mesa) até o checkout financeiro seguro integrado via Stripe, persistindo todo o histórico de pedidos.",
+    images: [
+      "/McProcessim/Mobile/INITIAL.png",
+      "/McProcessim/Mobile/RESTAURANT.png",
+      "/McProcessim/Mobile/PRODUCT.png",
+      "/McProcessim/Mobile/ORDERS.png",
+      "/McProcessim/Mobile/ORDER-SUCCESS.png",
+    ],
+    technologies: [
+      {
+        name: "React",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+      },
+      {
+        name: "TypeScript",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+      },
+      {
+        name: "Postgres",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
+      },
+      {
+        name: "Next.js",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+        className: "bg-white rounded-full p-0.5",
+      },
+    ],
+    repoUrl: "https://github.com/JudsonCiribelli/McProcessSim",
+    liveUrl: "https://mc-process-sim.vercel.app/fsw-donalds",
+  },
+  {
+    id: "lanchApp",
+    title: "Lanch App",
+    description:
+      "Backend completo para gestão de pedidos de uma lanchonete/pizzaria, focado em segurança, testes automatizados e arquitetura escalável. Este projeto simula um cenário real de Food Delivery. A aplicação permite que clientes façam pedidos (Delivery, Retirada ou Mesa), acompanhem o status em tempo real e gerenciem seus endereços. Para o estabelecimento, o sistema oferece controle total do cardápio e um fluxo de pedidos otimizado para a cozinha. O foco principal foi aplicar Clean Code, arquitetura em camadas, testes de integração validações rigorosas de segurança",
+    images: ["/api-image.png"],
+    technologies: [
+      {
+        name: "Node",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+      },
+      {
+        name: "TypeScript",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+      },
+      {
+        name: "Postgres",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
+      },
+      {
+        name: "Express",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
+        className: "bg-white rounded-full p-0.5",
+      },
+    ],
+    repoUrl: "https://github.com/JudsonCiribelli/LanchApp",
+    liveUrl: "/",
+  },
+  {
+    id: "Barber pro",
+    title: "Barber pro",
+    description:
+      "Plataforma completa de agendamento online para barbearias. O sistema conecta clientes a estabelecimentos, permitindo a personalização de serviços (cabelo, barba), gestão total da agenda (marcação e cancelamento) e um sistema de avaliação pós-serviço para garantir a qualidade do atendimento.",
+    images: [
+      "/Barber-Pro/Mobile/Barber.png",
+      "/Barber-Pro/Mobile/Book.png",
+      "/Barber-Pro/Mobile/Book-info.png",
+      "/Barber-Pro/Mobile/Dashboard.png",
+    ],
+    technologies: [
+      {
+        name: "Typerscript",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+      },
+      {
+        name: "Postgres",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
+      },
+      {
+        name: "NextJs",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+        className: "bg-white rounded-full p-0.5",
+      },
+      {
+        name: "Tailwind",
+        icon: "/Icons/Tailwindcss.png",
+      },
+      {
+        name: "Auth",
+        icon: "/Icons/auth-js-seeklogo.png",
+      },
+      {
+        name: "Neon DB",
+        icon: "/Icons/NeonIcon.png",
+      },
+    ],
+    repoUrl: "https://github.com/JudsonCiribelli/fsw-barber",
+    liveUrl:
+      "https://fsw-barber-4hnk47lhq-judsons-projects-d573a9e8.vercel.app/",
+  },
+  {
+    id: "Clothing",
+    title: "Clothing - Marketplace",
+    description:
+      "O Clothing é uma plataforma de e-commerce moderna focada em vestuário, construída com foco em performance e experiência do usuário (UX). A aplicação permite que usuários naveguem por coleções, gerenciem um carrinho de compras em tempo real e finalizem pedidos através de um fluxo de checkout seguro e pro",
+    images: [
+      "/Ecommerce/Mobile/Cart.png",
+      "/Ecommerce/Mobile/HOME.png",
+      "/Ecommerce/Mobile/LOGIN.png",
+      "/Ecommerce/Mobile/REGISTER.png",
+      "/Ecommerce/Mobile/SHOES.png",
+    ],
+    technologies: [
+      {
+        name: "React",
+        icon: "/Icons/React.png",
+      },
+      {
+        name: "TypeScript",
+        icon: "/Icons/Typescript.png",
+      },
+      {
+        name: "Firebase",
+        icon: "/Icons/Firebase.png",
+      },
+      {
+        name: "Styled Component",
+        icon: "/Icons/Styledcomponents.png",
+        className: "bg-white rounded-full p-0.5",
+      },
+      {
+        name: "Tailwind",
+        icon: "/Icons/Tailwindcss.png",
+      },
+      {
+        name: "Stripe",
+        icon: "/Icons/Stripe.png",
+      },
+    ],
+    repoUrl: "https://github.com/JudsonCiribelli/Ecommerce",
+    liveUrl: "https://ecommerce-one-lake-72.vercel.app/",
+  },
+  {
+    id: "SportCars",
+    title: "SportCars - Marketplace",
+    description:
+      "Marketplace completo de automóveis focado em proporcionar uma experiência fluida entre compradores e vendedores. O projeto simula um ecossistema real de e-commerce, permitindo desde a navegação intuitiva de anúncios até a gestão completa de inventário pelos usuários. Possui Autenticação Segura, Implementação de login via E-mail/Senha e Social Login (Google), garantindo flexibilidade e segurança no acesso. Sistema  completo onde o usuário autenticado pode cadastrar, editar e remover seus próprios veículos, com upload dinâmico de imagens e dados técnicos.  Canal direto de comunicação entre interessados e vendedores para agilizar o processo de venda.",
+    images: [
+      "/SportCars/Mobile/CAR.png",
+      "/SportCars/Mobile/REGISTER-CAR.png",
+      "/SportCars/Mobile/DASHBOARD.png",
+      "/SportCars/Mobile/SELLS.png",
+    ],
+    technologies: [
+      {
+        name: "React",
+        icon: "/Icons/React.png",
+      },
+      {
+        name: "Vite",
+        icon: "/Icons/Vitejs.png",
+      },
+      {
+        name: "TypeScript",
+        icon: "/Icons/Typescript.png",
+      },
+      {
+        name: "Firebase",
+        icon: "/Icons/Firebase.png",
+      },
+      {
+        name: "Tailwind",
+        icon: "/Icons/Tailwindcss.png",
+      },
+      {
+        name: "Zod",
+        icon: "/Icons/Zod.png",
+      },
+    ],
+    repoUrl: "https://github.com/JudsonCiribelli/WebCars",
+    liveUrl: "https://web-cars-drab.vercel.app/",
+  },
+];
 
 const ProjectsPage = () => {
   return (
-    <section className="bg-black my-4 w-full xl:mt-20">
-      <h1 className="text-white text-3xl text-center font-semibold py-2 mx-2  xl:text-2xl">
+    <section className="bg-black my-4 w-full xl:mt-20 flex flex-col items-center">
+      <h1 className="text-white text-3xl text-center font-semibold py-6 mx-2 xl:text-4xl">
         Meus Projetos
       </h1>
-      <div className="max-w-[420px] block flex-col xl:hidden xl:w-full">
-        {/* McProcessim */}
-        <div className="flex flex-col my-2 p-3 space-y-4  border border-solid border-white rounded-sm m-1">
-          <h1 className="text-blue-500 text-2xl font-semibold">McProcessSim</h1>
-          <p className="text-white">
-            Simulação completa de um ecossistema de autoatendimento para
-            fast-food. A aplicação gerencia desde a autenticação do usuário e
-            escolha do método de consumo (Delivery/Mesa) até o checkout
-            financeiro seguro integrado via Stripe, persistindo todo o histórico
-            de pedidos.
-          </p>
-          <div className="flex flex-col items-center gap-3">
-            <Image
-              src="/McProcessim/Mobile/INITIAL.png"
-              alt="api-image"
-              width={650}
-              height={650}
-              quality={100}
-              className="object-cover rounded-xs w-full max-w-[400px] h-auto"
-            />
-            <Image
-              src="/McProcessim/Mobile/RESTAURANT.png"
-              alt="api-image"
-              width={650}
-              height={650}
-              quality={100}
-              className="object-cover rounded-xs w-full max-w-[400px] h-auto "
-            />
-            <Image
-              src="/McProcessim/Mobile/PRODUCT.png"
-              alt="api-image"
-              width={650}
-              height={650}
-              quality={100}
-              className="object-cover rounded-xs w-full max-w-[400px] h-auto "
-            />
-            <Image
-              src="/McProcessim/Mobile/ORDERS.png"
-              alt="api-image"
-              width={650}
-              height={650}
-              quality={100}
-              className="object-cover rounded-xs w-full max-w-[400px] h-auto "
-            />
-            <Image
-              src="/McProcessim/Mobile/ORDER-SUCCESS.png"
-              alt="api-image"
-              width={650}
-              height={650}
-              quality={100}
-              className="object-cover rounded-xs w-full max-w-[400px] h-auto "
-            />
-          </div>
-          <h2 className="text-white text-sm font-semibold">
-            Tecnologias utilizadas
-          </h2>
-          <div className="grid grid-cols-2 gap-1 xl:flex">
-            <ShimmerButton className="shadow-2xl">
-              <div className="flex gap-2">
-                <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                  React
-                </span>
-                <Image
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
-                  width={20}
-                  height={20}
-                  alt="Node icon"
-                />
-              </div>
-            </ShimmerButton>
 
-            <ShimmerButton className="shadow-2xl">
-              <div className="flex items-center justify-center gap-1">
-                <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                  Typerscript
-                </span>
-                <Image
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
-                  width={20}
-                  height={20}
-                  alt="ts icon"
-                />
-              </div>
-            </ShimmerButton>
-
-            <ShimmerButton className="shadow-2xl">
-              <div className="flex items-center justify-center gap-1 ml-0">
-                <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                  Postgres
-                </span>
-                <Image
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
-                  width={20}
-                  height={20}
-                  alt="Postgres icon"
-                />
-              </div>
-            </ShimmerButton>
-
-            <ShimmerButton className="shadow-2xl">
-              <div className="flex items-center justify-center gap-1 ml-0">
-                <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                  NextJs
-                </span>
-                <Image
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
-                  width={20}
-                  height={20}
-                  alt="Postgres icon"
-                  className="bg-white rounded-full p-0.4"
-                />
-              </div>
-            </ShimmerButton>
-          </div>
-          <div className="flex gap-2">
-            <Button asChild className="bg-white w-[50%]">
-              <Link
-                href="https://github.com/JudsonCiribelli/McProcessSim"
-                target="_blank"
-              >
-                Repositório
-              </Link>
-            </Button>
-            <Button asChild className="bg-white w-[50%]">
-              <Link href="/">Projeto</Link>
-            </Button>
-          </div>
-        </div>
-
-        {/* LanchApp */}
-        <div className="flex flex-col my-2 p-3 space-y-4 border border-solid border-white rounded-sm m-1">
-          <h1 className="text-blue-500 text-2xl font-semibold">LanchApp</h1>
-          <p className="text-white">
-            Backend completo para gestão de pedidos de uma lanchonete/pizzaria,
-            focado em segurança, testes automatizados e arquitetura escalável.
-            Este projeto simula um cenário real de Food Delivery. A aplicação
-            permite que clientes façam pedidos (Delivery, Retirada ou Mesa),
-            acompanhem o status em tempo real e gerenciem seus endereços. Para o
-            estabelecimento, o sistema oferece controle total do cardápio e um
-            fluxo de pedidos otimizado para a cozinha. O foco principal foi
-            aplicar Clean Code, arquitetura em camadas, testes de integração e
-            validações rigorosas de segurança.
-          </p>
-          <div className="flex flex-col items-center justify-center">
-            <Image
-              src="/api-image.png"
-              alt="api-image"
-              width={650}
-              height={650}
-              quality={100}
-              className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
-            />
-          </div>
-
-          <h2 className="text-white text-sm font-semibold">
-            Tecnologias utilizadas
-          </h2>
-          <div className="grid grid-cols-2 gap-1 xl:flex">
-            <ShimmerButton className="shadow-2xl">
-              <div className="flex gap-2">
-                <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                  Node
-                </span>
-                <Image
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
-                  width={20}
-                  height={20}
-                  alt="Node icon"
-                />
-              </div>
-            </ShimmerButton>
-
-            <ShimmerButton className="shadow-2xl">
-              <div className="flex items-center justify-center gap-1">
-                <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                  Typerscript
-                </span>
-                <Image
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
-                  width={20}
-                  height={20}
-                  alt="ts icon"
-                />
-              </div>
-            </ShimmerButton>
-
-            <ShimmerButton className="shadow-2xl">
-              <div className="flex items-center justify-center gap-1 ml-0">
-                <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                  Postgres
-                </span>
-                <Image
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
-                  width={20}
-                  height={20}
-                  alt="Postgres icon"
-                />
-              </div>
-            </ShimmerButton>
-
-            <ShimmerButton className="shadow-2xl">
-              <div className="flex items-center justify-center gap-1 ml-0">
-                <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                  Express
-                </span>
-                <Image
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
-                  width={20}
-                  height={20}
-                  alt="Postgres icon"
-                  className="bg-white rounded-full p-0.4"
-                />
-              </div>
-            </ShimmerButton>
-          </div>
-          <div className="flex gap-2">
-            <Button asChild className="bg-white w-[50%]">
-              <Link
-                href="https://github.com/JudsonCiribelli/LanchApp"
-                target="_blank"
-              >
-                Repositório
-              </Link>
-            </Button>
-            <Button asChild className="bg-white w-[50%]">
-              <Link href="/">Projeto</Link>
-            </Button>
-          </div>
-        </div>
-
-        {/* BarberPro */}
-        <div className="flex flex-col my-2 p-3 space-y-4 border border-solid border-white rounded-sm m-1">
-          <h1 className="text-blue-500 text-2xl font-semibold">BarberPro</h1>
-          <p className="text-white">
-            Plataforma completa de agendamento online para barbearias. O sistema
-            conecta clientes a estabelecimentos, permitindo a personalização de
-            serviços (cabelo, barba), gestão total da agenda (marcação e
-            cancelamento) e um sistema de avaliação pós-serviço para garantir a
-            qualidade do atendimento.
-          </p>
-          <div className="flex flex-col items-center justify-center gap-3">
-            <Image
-              src="/Barber-Pro/Mobile/Dashboard.png"
-              alt="login page e logout page"
-              width={650}
-              height={650}
-              quality={100}
-              className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
-            />
-            <Image
-              src="/Barber-Pro/Mobile/Barber.png"
-              alt="Barber pro home page"
-              width={650}
-              height={650}
-              quality={100}
-              className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
-            />
-            <Image
-              src="/Barber-Pro/Mobile/Book.png"
-              alt="Agendamentos"
-              width={650}
-              height={650}
-              quality={100}
-              className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
-            />
-            <Image
-              src="/Barber-Pro/Mobile/Book-info.png"
-              alt="Avaliação"
-              width={650}
-              height={650}
-              quality={100}
-              className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
-            />
-          </div>
-          <h2 className="text-white text-sm font-semibold">
-            Tecnologias utilizadas
-          </h2>
-          <div className="grid grid-cols-3 gap-1 xl:flex">
-            <ShimmerButton className="shadow-2xl">
-              <div className="flex items-center justify-center gap-1">
-                <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                  Typerscript
-                </span>
-                <Image
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
-                  width={20}
-                  height={20}
-                  alt="ts icon"
-                />
-              </div>
-            </ShimmerButton>
-
-            <ShimmerButton className="shadow-2xl">
-              <div className="flex items-center justify-center gap-1 ml-0">
-                <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                  Postgres
-                </span>
-                <Image
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
-                  width={20}
-                  height={20}
-                  alt="Postgres icon"
-                />
-              </div>
-            </ShimmerButton>
-
-            <ShimmerButton className="shadow-2xl">
-              <div className="flex items-center justify-center gap-1 ml-0">
-                <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                  NextJs
-                </span>
-                <Image
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
-                  width={20}
-                  height={20}
-                  alt="Postgres icon"
-                  className="bg-white rounded-full p-0.4"
-                />
-              </div>
-            </ShimmerButton>
-          </div>
-          <div className="flex gap-2">
-            <Button asChild className="bg-white w-[50%]">
-              <Link
-                href="https://github.com/JudsonCiribelli/fsw-barber"
-                target="_blank"
-              >
-                Repositório
-              </Link>
-            </Button>
-            <Button asChild className="bg-white w-[50%]">
-              <Link href="/">Projeto</Link>
-            </Button>
-          </div>
-        </div>
-
-        {/* Ecommerce */}
-        <div className="flex flex-col my-2 p-3 space-y-4 border border-solid border-white rounded-sm m-1">
-          <h1 className="text-blue-500 text-2xl font-semibold">Clothing</h1>
-          <p className="text-white">
-            O Clothing é uma plataforma de e-commerce moderna focada em
-            vestuário, construída com foco em performance e experiência do
-            usuário (UX). A aplicação permite que usuários naveguem por
-            coleções, gerenciem um carrinho de compras em tempo real e finalizem
-            pedidos através de um fluxo de checkout seguro e profissional.
-          </p>
-
-          {/* Imagens */}
-          <div className="flex flex-col items-center justify-center gap-3">
-            <Image
-              src="/Ecommerce/Mobile/HOME.png"
-              alt="login page e logout page"
-              width={650}
-              height={650}
-              quality={100}
-              className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
-            />
-
-            <Image
-              src="/Ecommerce/Mobile/SHOES.png"
-              alt="login page e logout page"
-              width={650}
-              height={650}
-              quality={100}
-              className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
-            />
-
-            <Image
-              src="/Ecommerce/Mobile/LOGIN.png"
-              alt="login page e logout page"
-              width={650}
-              height={650}
-              quality={100}
-              className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
-            />
-
-            <Image
-              src="/Ecommerce/Mobile/REGISTER.png"
-              alt="login page e logout page"
-              width={650}
-              height={650}
-              quality={100}
-              className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
-            />
-
-            <Image
-              src="/Ecommerce/Mobile/CART.png"
-              alt="login page e logout page"
-              width={650}
-              height={650}
-              quality={100}
-              className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
-            />
-          </div>
-
-          <h2 className="text-white text-sm font-semibold">
-            Tecnologias utilizadas
-          </h2>
-
-          {/* Tecnologias */}
-          <div className="grid grid-cols-2 gap-1">
-            <ShimmerButton className="shadow-2xl">
-              <div className="flex gap-2">
-                <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                  React
-                </span>
-                <Image
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
-                  width={20}
-                  height={20}
-                  alt="Node icon"
-                />
-              </div>
-            </ShimmerButton>
-
-            <ShimmerButton className="shadow-2xl">
-              <div className="flex items-center justify-center gap-1">
-                <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                  Typerscript
-                </span>
-                <Image
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
-                  width={20}
-                  height={20}
-                  alt="ts icon"
-                />
-              </div>
-            </ShimmerButton>
-
-            <ShimmerButton className="shadow-2xl">
-              <div className="flex items-center justify-center gap-1 ml-0">
-                <span className="whitespace-pre-wrap text-center text-xs font-normal leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                  Styled Component
-                </span>
-                <Image
-                  src="/Icons/Styledcomponents.png"
-                  width={20}
-                  height={20}
-                  alt="Styled Components"
-                  className="bg-white rounded-lg"
-                />
-              </div>
-            </ShimmerButton>
-
-            <ShimmerButton className="shadow-2xl">
-              <div className="flex items-center justify-center gap-1 ml-0">
-                <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                  Firebase
-                </span>
-                <Image
-                  src="/Icons/Firebase.png"
-                  width={20}
-                  height={20}
-                  alt="Firebase icon"
-                />
-              </div>
-            </ShimmerButton>
-          </div>
-
-          {/* Repositorio */}
-          <div className="flex gap-2">
-            <Button asChild className="bg-white w-[50%]">
-              <Link
-                href="https://github.com/JudsonCiribelli/McProcessSim"
-                target="_blank"
-              >
-                Repositório
-              </Link>
-            </Button>
-            <Button asChild className="bg-white w-[50%]">
-              <Link href="/">Projeto</Link>
-            </Button>
-          </div>
-        </div>
-
-        {/* SportCars */}
-        <div className="flex flex-col my-2 p-3 space-y-4 border border-solid border-white rounded-sm m-1">
-          <h1 className="text-blue-500 text-2xl font-semibold">
-            SportCars - Marketplace
-          </h1>
-          <p className="text-white">
-            Marketplace completo de automóveis focado em proporcionar uma
-            experiência fluida entre compradores e vendedores. O projeto simula
-            um ecossistema real de e-commerce, permitindo desde a navegação
-            intuitiva de anúncios até a gestão completa de inventário pelos
-            usuários. Possui Autenticação Segura, Implementação de login via
-            E-mail/Senha e Social Login (Google), garantindo flexibilidade e
-            segurança no acesso. Sistema completo onde o usuário autenticado
-            pode cadastrar, editar e remover seus próprios veículos, com upload
-            dinâmico de imagens e dados técnicos. Canal direto de comunicação
-            entre interessados e vendedores para agilizar o processo de venda.
-          </p>
-
-          <div className="flex flex-col items-center justify-center gap-3">
-            <Image
-              src="/SportCars/Mobile/DASHBOARD.png"
-              alt="login page e logout page"
-              width={650}
-              height={650}
-              quality={100}
-              className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
-            />
-
-            <Image
-              src="/SportCars/Mobile/CAR.png"
-              alt="login page e logout page"
-              width={650}
-              height={650}
-              quality={100}
-              className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
-            />
-
-            <Image
-              src="/SportCars/Mobile/REGISTER-CAR.png"
-              alt="login page e logout page"
-              width={650}
-              height={650}
-              quality={100}
-              className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
-            />
-
-            <Image
-              src="/SportCars/Mobile/SELLS.png"
-              alt="login page e logout page"
-              width={650}
-              height={650}
-              quality={100}
-              className="object-cover rounded-xs w-full max-w-[400px] h-auto xl:max-w-[650px]"
-            />
-          </div>
-
-          <div className="grid grid-cols-2 gap-1">
-            <ShimmerButton className="shadow-2xl">
-              <div className="flex gap-2">
-                <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                  React
-                </span>
-                <Image
-                  src="/Icons/React.png"
-                  width={20}
-                  height={20}
-                  alt="React icon"
-                />
-              </div>
-            </ShimmerButton>
-
-            <ShimmerButton className="shadow-2xl">
-              <div className="flex gap-2">
-                <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                  Vite
-                </span>
-                <Image
-                  src="/Icons/Vitejs.png"
-                  width={20}
-                  height={20}
-                  alt="Vite icon"
-                />
-              </div>
-            </ShimmerButton>
-
-            <ShimmerButton className="shadow-2xl">
-              <div className="flex gap-2">
-                <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                  Typescript
-                </span>
-                <Image
-                  src="/Icons/Typescript.png"
-                  width={20}
-                  height={20}
-                  alt="Typescript icon"
-                />
-              </div>
-            </ShimmerButton>
-
-            <ShimmerButton className="shadow-2xl">
-              <div className="flex gap-2">
-                <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                  Firebase
-                </span>
-                <Image
-                  src="/Icons/Firebase.png"
-                  width={20}
-                  height={20}
-                  alt="Firebase icon"
-                />
-              </div>
-            </ShimmerButton>
-
-            <ShimmerButton className="shadow-2xl">
-              <div className="flex gap-2">
-                <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                  Tailwind
-                </span>
-                <Image
-                  src="/Icons/Tailwindcss.png"
-                  width={20}
-                  height={20}
-                  alt="Firebase icon"
-                />
-              </div>
-            </ShimmerButton>
-
-            <ShimmerButton className="shadow-2xl">
-              <div className="flex gap-2">
-                <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                  Zod
-                </span>
-                <Image
-                  src="/Icons/Zod.png"
-                  width={20}
-                  height={20}
-                  alt="Firebase icon"
-                />
-              </div>
-            </ShimmerButton>
-          </div>
-
-          <div className="flex gap-2">
-            <Button asChild className="bg-white w-[50%]">
-              <Link
-                href="https://github.com/JudsonCiribelli/McProcessSim"
-                target="_blank"
-              >
-                Repositório
-              </Link>
-            </Button>
-            <Button asChild className="bg-white w-[50%]">
-              <Link href="/">Projeto</Link>
-            </Button>
-          </div>
-        </div>
+      <div className="w-full max-w-2xl px-4 flex flex-col gap-10 xl:hidden">
+        {mobileProjectsData.map((project) => (
+          <MobileProjectCard key={project.id} project={project} />
+        ))}
       </div>
 
-      <div className="hidden my-10 xl:block">
-        <div className=" flex items-center justify-center">
-          <ProjectsComponents />
-        </div>
+      <div className="hidden my-10 w-full xl:flex items-center justify-center">
+        <ProjectsComponents />
       </div>
     </section>
   );
