@@ -23,15 +23,15 @@ interface ProjectCarouselProps {
 
 const ProjectCarousel = ({ images }: ProjectCarouselProps) => {
   return (
-    <Carousel className="w-[45%] h-[600px]">
+    <Carousel className="w-[47%] h-[600px]">
       <CarouselContent>
         {images.map((image, index) => (
           <CarouselItem key={index} className="text-white">
             <Image
               src={image.src}
               alt={image.alt}
-              width={900}
-              height={900}
+              width={1280}
+              height={720}
               style={imageStyle}
               quality={100}
               className="object-cover rounded-lg"
