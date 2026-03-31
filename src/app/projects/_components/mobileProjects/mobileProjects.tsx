@@ -22,10 +22,10 @@ interface MobileProjectProps {
 
 const MobileProjectCard = ({ project }: MobileProjectProps) => {
   return (
-    <div className="flex flex-col p-5 space-y-6 border border-gray-800 rounded-xl bg-neutral-950/50">
+    <div className="flex flex-col space-y-6 rounded-xl border border-gray-800 bg-neutral-950/50 p-5">
       <div className="space-y-2">
-        <h2 className="text-blue-500 text-2xl font-bold">{project.title}</h2>
-        <p className="text-gray-300 text-sm leading-relaxed">
+        <h2 className="text-2xl font-bold text-blue-500">{project.title}</h2>
+        <p className="text-sm leading-relaxed text-gray-300">
           {project.description}
         </p>
       </div>
@@ -39,20 +39,20 @@ const MobileProjectCard = ({ project }: MobileProjectProps) => {
             width={650}
             height={650}
             quality={90}
-            className="object-cover rounded-lg w-full h-auto shadow-md border border-gray-800"
+            className="h-auto w-full rounded-lg border border-gray-800 object-cover shadow-md"
           />
         ))}
       </div>
 
       <div className="space-y-3">
-        <h3 className="text-white text-sm font-semibold border-b border-gray-800 pb-2">
+        <h3 className="border-b border-gray-800 pb-2 text-sm font-semibold text-white">
           Tecnologias utilizadas
         </h3>
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
           {project.technologies.map((tech) => (
-            <ShimmerButton key={tech.name} className="shadow-lg h-10">
+            <ShimmerButton key={tech.name} className="h-10 shadow-lg">
               <div className="flex items-center justify-center gap-2">
-                <span className="text-white text-xs font-medium tracking-tight">
+                <span className="text-xs font-medium tracking-tight text-white">
                   {tech.name}
                 </span>
                 <Image
@@ -71,7 +71,7 @@ const MobileProjectCard = ({ project }: MobileProjectProps) => {
       <div className="flex gap-3 pt-2">
         <Button
           asChild
-          className="bg-gray-100 hover:bg-gray-300 text-black font-semibold flex-1"
+          className="flex-1 bg-gray-100 font-semibold text-black hover:bg-gray-300"
         >
           <Link
             href={project.repoUrl}
@@ -83,7 +83,7 @@ const MobileProjectCard = ({ project }: MobileProjectProps) => {
         </Button>
         <Button
           asChild
-          className="bg-blue-600 hover:bg-blue-700 text-white font-semibold flex-1"
+          className="flex-1 bg-blue-600 font-semibold text-white hover:bg-blue-700"
         >
           <Link
             href={project.liveUrl}

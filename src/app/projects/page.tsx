@@ -192,18 +192,18 @@ const mobileProjectsData = [
 
 const ProjectsPage = () => {
   return (
-    <section className="bg-black my-4 w-full xl:mt-20 flex flex-col items-center">
-      <h1 className="text-white text-3xl text-center font-semibold py-6 mx-2 xl:text-4xl">
+    <section className="my-4 flex w-full flex-col items-center bg-black xl:mt-20">
+      <h1 className="mx-2 py-6 text-center text-3xl font-semibold text-white xl:text-4xl">
         Meus Projetos
       </h1>
 
-      <div className="w-full max-w-2xl px-4 flex flex-col gap-10 xl:hidden">
+      <div className="flex w-full max-w-2xl flex-col gap-10 px-4 xl:hidden">
         {mobileProjectsData.map((project) => (
           <MobileProjectCard key={project.id} project={project} />
         ))}
       </div>
 
-      <div className="hidden my-10 w-full xl:flex items-center justify-center">
+      <div className="my-10 hidden w-full items-center justify-center xl:flex">
         <ProjectsComponents />
       </div>
     </section>

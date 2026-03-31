@@ -3,9 +3,9 @@ import Link from "next/link";
 
 const InitalPresentation = () => {
   return (
-    <div className="flex flex-col max-w-[400px] gap-4 xl:max-w-[800px]">
-      <h1 className="text-white text-4xl font-normal">Sobre mim</h1>
-      <p className="text-white text-lg font-normal xl:text-lg ">
+    <div className="flex max-w-[400px] flex-col gap-4 xl:max-w-[800px]">
+      <h1 className="text-4xl font-normal text-white">Sobre mim</h1>
+      <p className="text-lg font-normal text-white xl:text-lg">
         Mais do que apenas escrever código, sou um profissional movido pela
         resolução de problemas. Graduado em Interdisciplinar em Ciências e
         Tecnologia , trago para a tecnologia a mesma disciplina inegociável que
@@ -23,14 +23,14 @@ const InitalPresentation = () => {
           href="https://www.linkedin.com/in/judson-ciribelli-a23867234/"
           target="_blank"
         >
-          <ShinyButton className="text-white mt-2 flex">LinkedIn</ShinyButton>
+          <ShinyButton className="mt-2 flex text-white">LinkedIn</ShinyButton>
         </Link>
 
         <Link href="https://github.com/JudsonCiribelli" target="_blank">
-          <ShinyButton className="text-white mt-2 flex">GitHub</ShinyButton>
+          <ShinyButton className="mt-2 flex text-white">GitHub</ShinyButton>
         </Link>
         <Link href="https://github.com/JudsonCiribelli" target="_blank">
-          <ShinyButton className="text-white mt-2">Download CV</ShinyButton>
+          <ShinyButton className="mt-2 text-white">Download CV</ShinyButton>
         </Link>
       </div>
     </div>

@@ -32,16 +32,16 @@ const images = slugs.map(
 
 const Home = () => {
   return (
-    <main className="w-full flex flex-col items-center justify-center space-y-5 p-4">
+    <main className="flex w-full flex-col items-center justify-center space-y-5 p-4">
       <BackgroundParticles />
 
       {/* Texto */}
       <section
-        className="h-[800px] flex flex-col items-center justify-center my-5"
+        className="my-5 flex h-[800px] flex-col items-center justify-center"
         id="home"
       >
         {/* Nome */}
-        <h1 className="text-white text-3xl font-normal xl:text-7xl">
+        <h1 className="text-3xl font-normal text-white xl:text-7xl">
           Judson Ciribelli
         </h1>
         <TextAnimate
@@ -49,7 +49,7 @@ const Home = () => {
           as="h1"
           by="word"
           duration={1}
-          className="text-white text-3xl xl:text-7xl"
+          className="text-3xl text-white xl:text-7xl"
         >
           {`i'm a software engineer`}
         </TextAnimate>
@@ -57,10 +57,10 @@ const Home = () => {
 
       {/* About */}
       <section
-        className="h-[1250px] w-[400px] flex items-center justify-center p-4 xl:w-full xl:h-[850px]"
+        className="flex h-[1250px] w-[400px] items-center justify-center p-4 xl:h-[850px] xl:w-full"
         id="about"
       >
-        <div className="flex flex-col relative items-center justify-evenly gap-4 rounded-lg p-7 [box-shadow:-4px_-43px_49px_-5px_rgba(148,96,10,0.24)]  xl:flex-row xl:w-[1400px]">
+        <div className="relative flex flex-col items-center justify-evenly gap-4 rounded-lg p-7 [box-shadow:-4px_-43px_49px_-5px_rgba(148,96,10,0.24)] xl:w-[1400px] xl:flex-row">
           <InitalApresentation />
           <ImageComponent />
         </div>
@@ -68,10 +68,10 @@ const Home = () => {
 
       {/* Tecnologias */}
       <section
-        className="h-[800px] w-[400px]  items-center p-3 xl:h-[560px] xl:w-full "
+        className="h-[800px] w-[400px] items-center p-3 xl:h-[560px] xl:w-full"
         id="technologies"
       >
-        <h2 className="text-white text-2xl text-center mb-2 xl:text-7xl xl:mb-4">
+        <h2 className="mb-2 text-center text-2xl text-white xl:mb-4 xl:text-7xl">
           Tecnologias
         </h2>
         <div className="flex flex-col items-center justify-center gap-1 rounded-sm bg-white xl:flex-row xl:rounded-none">

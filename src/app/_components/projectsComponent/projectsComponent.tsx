@@ -225,14 +225,14 @@ const ProjectsComponents = () => {
 
   return (
     <>
-      <Carousel className="flex flex-col w-full max-w-[1200px] max-h-[900px] p-4 rounded-lg">
+      <Carousel className="flex max-h-[900px] w-full max-w-[1200px] flex-col rounded-lg p-4">
         <CarouselContent>
           {allProjects.map((project) => (
             <CarouselItem key={project.id}>
               <div className="flex items-center justify-evenly">
                 <ProjectCarousel images={project.images} />
 
-                <div className="w-[40%] h-[600px] mb-12">
+                <div className="mb-12 h-[600px] w-[40%]">
                   <ProjectsDescription
                     title={project.title}
                     description={project.description}

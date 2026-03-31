@@ -16,10 +16,10 @@ const HeaderComponent = () => {
   const pathname = usePathname();
   const isHomePage = pathname === "/";
   return (
-    <header className="w-[430px] py-4 flex top-0 left-0 z-50 bg-black border-b border-gray-700 xl:fixed items-center justify-center  lg:w-full xl:w-full">
+    <header className="left-0 top-0 z-50 flex w-[430px] items-center justify-center border-b border-gray-700 bg-black py-4 lg:w-full xl:fixed xl:w-full">
       {isHomePage ? (
-        <nav className="w-full max-w-3xl m-1">
-          <div className="grid grid-cols-4 gap-1 xl:flex xl:items-center xl:justify-between xl:gap-8 list-none">
+        <nav className="m-1 w-full max-w-3xl">
+          <div className="grid list-none grid-cols-4 gap-1 xl:flex xl:items-center xl:justify-between xl:gap-8">
             {navLinks.map((link, index) => (
               <div
                 key={link.href}
@@ -39,15 +39,15 @@ const HeaderComponent = () => {
           </div>
         </nav>
       ) : (
-        <div className="w-full max-w-6xl px-4 flex items-center justify-start">
+        <div className="flex w-full max-w-6xl items-center justify-start px-4">
           <Link
             href="/"
-            className="flex items-center gap-2 text-white hover:text-blue-500 transition-colors group"
+            className="group flex items-center gap-2 text-white transition-colors hover:text-blue-500"
           >
-            <div className="p-2 bg-slate-800 rounded-full group-hover:bg-slate-700 transition-colors">
-              <ArrowBigLeft className="w-5 h-5" />
+            <div className="rounded-full bg-slate-800 p-2 transition-colors group-hover:bg-slate-700">
+              <ArrowBigLeft className="h-5 w-5" />
             </div>
-            <span className="font-medium text-lg">Voltar ao Início</span>
+            <span className="text-lg font-medium">Voltar ao Início</span>
           </Link>
         </div>
       )}

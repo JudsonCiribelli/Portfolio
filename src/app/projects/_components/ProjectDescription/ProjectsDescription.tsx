@@ -40,16 +40,16 @@ const ProjectsDescription = ({
   isLiveDisabled,
 }: ProjectsDescriptionProps) => {
   return (
-    <div className="p-4 space-y-6 flex flex-col">
-      <h1 className="text-blue-500 text-xl mb-2 font-semibold">{title}</h1>
+    <div className="flex flex-col space-y-6 p-4">
+      <h1 className="mb-2 text-xl font-semibold text-blue-500">{title}</h1>
 
-      <p className="text-white text-sm">{description}</p>
+      <p className="text-sm text-white">{description}</p>
 
       <div className="space-y-2">
-        <h2 className="text-blue-500 text-lg font-semibold">
+        <h2 className="text-lg font-semibold text-blue-500">
           Tecnologias utilizadas
         </h2>
-        <div className="flex gap-1 flex-wrap">
+        <div className="flex flex-wrap gap-1">
           {/* Aqui iteramos sobre as tecnologias recebidas por prop */}
           {technologies.map((tech) => (
             <ShimmerButton key={tech.id} className="shadow-2xl">
@@ -75,7 +75,7 @@ const ProjectsDescription = ({
         {isLiveDisabled ? (
           <AlertDialog>
             <AlertDialogTrigger asChild>
-              <Button className="bg-blue-600 text-lg cursor-pointer text-white hover:bg-blue-600">
+              <Button className="cursor-pointer bg-blue-600 text-lg text-white hover:bg-blue-600">
                 Veja o projeto em tempo real
               </Button>
             </AlertDialogTrigger>

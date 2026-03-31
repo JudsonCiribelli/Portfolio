@@ -3,10 +3,10 @@ import Image from "next/image";
 
 const TechnologiesComponent = () => {
   return (
-    <div className="grid grid-cols-3 gap-4 mt-6 p-2">
+    <div className="mt-6 grid grid-cols-3 gap-4 p-2">
       <ShimmerButton className="shadow-2xl">
-        <div className="flex items-center justify-center gap-1 ml-0">
-          <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+        <div className="ml-0 flex items-center justify-center gap-1">
+          <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white lg:text-lg dark:from-white dark:to-slate-900/10">
             Typerscript
           </span>
           <Image
@@ -18,8 +18,8 @@ const TechnologiesComponent = () => {
         </div>
       </ShimmerButton>
       <ShimmerButton className="shadow-2xl">
-        <div className="flex items-center justify-center gap-1 ml-0">
-          <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+        <div className="ml-0 flex items-center justify-center gap-1">
+          <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white lg:text-lg dark:from-white dark:to-slate-900/10">
             Javascript
           </span>
           <Image
@@ -32,7 +32,7 @@ const TechnologiesComponent = () => {
       </ShimmerButton>
       <ShimmerButton className="shadow-2xl">
         <div className="flex gap-2">
-          <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+          <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white lg:text-lg dark:from-white dark:to-slate-900/10">
             React
           </span>
           <Image
@@ -45,7 +45,7 @@ const TechnologiesComponent = () => {
       </ShimmerButton>
       <ShimmerButton className="shadow-2xl">
         <div className="flex gap-2">
-          <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+          <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white lg:text-lg dark:from-white dark:to-slate-900/10">
             Next
           </span>
           <Image
@@ -53,13 +53,13 @@ const TechnologiesComponent = () => {
             width={20}
             height={20}
             alt="next icon"
-            className="bg-white rounded-full p-0.4"
+            className="p-0.4 rounded-full bg-white"
           />
         </div>
       </ShimmerButton>
       <ShimmerButton className="shadow-2xl">
         <div className="flex gap-2">
-          <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+          <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white lg:text-lg dark:from-white dark:to-slate-900/10">
             Git
           </span>
           <Image
@@ -72,7 +72,7 @@ const TechnologiesComponent = () => {
       </ShimmerButton>
       <ShimmerButton className="shadow-2xl">
         <div className="flex gap-2">
-          <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+          <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white lg:text-lg dark:from-white dark:to-slate-900/10">
             HTML
           </span>
           <Image
@@ -85,7 +85,7 @@ const TechnologiesComponent = () => {
       </ShimmerButton>
       <ShimmerButton className="shadow-2xl">
         <div className="flex gap-2">
-          <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+          <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white lg:text-lg dark:from-white dark:to-slate-900/10">
             CSS
           </span>
           <Image
@@ -98,7 +98,7 @@ const TechnologiesComponent = () => {
       </ShimmerButton>
       <ShimmerButton className="shadow-2xl">
         <div className="flex gap-2">
-          <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+          <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white lg:text-lg dark:from-white dark:to-slate-900/10">
             Tailwind
           </span>
           <Image
@@ -111,7 +111,7 @@ const TechnologiesComponent = () => {
       </ShimmerButton>
       <ShimmerButton className="shadow-2xl">
         <div className="flex gap-2">
-          <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+          <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white lg:text-lg dark:from-white dark:to-slate-900/10">
             Node
           </span>
           <Image
@@ -123,8 +123,8 @@ const TechnologiesComponent = () => {
         </div>
       </ShimmerButton>
       <ShimmerButton className="shadow-2xl">
-        <div className="flex items-center justify-center gap-1 ml-0">
-          <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+        <div className="ml-0 flex items-center justify-center gap-1">
+          <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white lg:text-lg dark:from-white dark:to-slate-900/10">
             Postgres
           </span>
           <Image
@@ -137,7 +137,7 @@ const TechnologiesComponent = () => {
       </ShimmerButton>
       <ShimmerButton className="shadow-2xl">
         <div className="flex gap-2">
-          <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+          <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white lg:text-lg dark:from-white dark:to-slate-900/10">
             MySQL
           </span>
           <Image
@@ -150,7 +150,7 @@ const TechnologiesComponent = () => {
       </ShimmerButton>
       <ShimmerButton className="shadow-2xl">
         <div className="flex gap-2">
-          <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+          <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white lg:text-lg dark:from-white dark:to-slate-900/10">
             Jest
           </span>
           <Image
