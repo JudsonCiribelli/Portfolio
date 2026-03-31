@@ -1,7 +1,7 @@
 import { ShinyButton } from "@/app/magicui/shiny-button";
 import Link from "next/link";
 
-const InitalApresentation = () => {
+const InitalPresentation = () => {
   return (
     <div className="flex flex-col max-w-[400px] gap-4 xl:max-w-[800px]">
       <h1 className="text-white text-4xl font-normal">Sobre mim</h1>
@@ -37,4 +37,4 @@ const InitalApresentation = () => {
   );
 };
 
-export default InitalApresentation;
+export default InitalPresentation;
