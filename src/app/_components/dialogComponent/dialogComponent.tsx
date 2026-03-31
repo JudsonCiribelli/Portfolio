@@ -15,7 +15,7 @@ const DialogComponent = () => {
       <AlertDialogTrigger asChild>
         <Button variant="outline">Certificado</Button>
       </AlertDialogTrigger>
-      <AlertDialogContent>
+      <AlertDialogContent className="bg-white">
         <AlertDialogHeader>
           <Image
             src="/Certificado.png"
