@@ -1,11 +1,11 @@
-import ImageComponent from "./_components/imageComponent/imageComponent";
-import { TextAnimate } from "./magicui/text-animate";
-import InitalApresentation from "./_components/initialPresentationComponent/initialPresentation";
-import TechnologiesComponent from "./_components/technologiesComponent/technologiesComponent";
-import { IconCloud } from "./magicui/icon-cloud";
 import { BackgroundParticles } from "./_components/backgroundParticles/backgroundParticles";
 import EducationSection from "./_components/educationSection/educationSection";
 import FeaturedProjectSection from "./_components/featuredProjectSection/featuredProjectSection";
+import ImageComponent from "./_components/imageComponent/imageComponent";
+import InitalApresentation from "./_components/initialPresentationComponent/initialPresentation";
+import TechnologiesComponent from "./_components/technologiesComponent/technologiesComponent";
+import { IconCloud } from "./magicui/icon-cloud";
+import { TextAnimate } from "./magicui/text-animate";
 
 const slugs = [
   "typescript",
