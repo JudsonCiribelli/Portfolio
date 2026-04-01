@@ -163,7 +163,7 @@ const ProjectsComponents = () => {
       ],
       githubUrl: "https://github.com/JudsonCiribelli/McProcessSim",
       liveUrl: "https://mc-process-sim.vercel.app/fsw-donalds",
-      isLiveDisabled: true,
+      isLiveDisabled: false,
     },
     {
       id: "Clothing",
@@ -193,7 +193,7 @@ const ProjectsComponents = () => {
       ],
       githubUrl: "https://github.com/JudsonCiribelli/Ecommerce",
       liveUrl: "https://ecommerce-one-lake-72.vercel.app/",
-      isLiveDisabled: true,
+      isLiveDisabled: false,
     },
     {
       id: "quickbite",
