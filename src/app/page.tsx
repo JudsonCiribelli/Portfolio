@@ -37,7 +37,7 @@ const Home = () => {
 
       {/* Texto */}
       <section
-        className="my-5 flex h-[800px] flex-col items-center justify-center"
+        className="my-5 flex h-[800px] flex-col items-center justify-center gap-2 text-center"
         id="home"
       >
         {/* Nome */}
@@ -46,12 +46,12 @@ const Home = () => {
         </h1>
         <TextAnimate
           animation="slideUp"
-          as="h1"
+          as="h2"
           by="word"
           duration={1}
-          className="text-3xl text-white xl:text-7xl"
+          className="max-w-2xl text-lg font-light text-gray-300 xl:text-2xl"
         >
-          {`i'm a software engineer`}
+          {`Desenvolvedor Full-stack. Criando experiências digitais modernas que resolvem problemas reais de forma simples e escalável.`}
         </TextAnimate>
       </section>
 
