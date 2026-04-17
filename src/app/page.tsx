@@ -32,7 +32,7 @@ const images = slugs.map(
 
 const Home = () => {
   return (
-    <main className="flex w-full flex-col items-center justify-center space-y-5 p-4">
+    <main className="flex w-full flex-col items-center justify-center space-y-5 overflow-x-hidden p-4">
       <BackgroundParticles />
 
       {/* Texto */}
@@ -57,7 +57,7 @@ const Home = () => {
 
       {/* About */}
       <section
-        className="flex h-[1250px] w-[400px] items-center justify-center p-4 xl:h-[850px] xl:w-full"
+        className="flex h-[1250px] w-full items-center justify-center p-4 xl:h-[850px]"
         id="about"
       >
         <div className="relative flex flex-col items-center justify-evenly gap-4 rounded-lg p-7 [box-shadow:-4px_-43px_49px_-5px_rgba(148,96,10,0.24)] xl:w-[1400px] xl:flex-row">
@@ -68,7 +68,7 @@ const Home = () => {
 
       {/* Tecnologias */}
       <section
-        className="h-[800px] w-[400px] items-center p-3 xl:h-[560px] xl:w-full"
+        className="h-[800px] w-full items-center p-3 xl:h-[560px]"
         id="technologies"
       >
         <h2 className="mb-2 text-center text-2xl text-white xl:mb-4 xl:text-7xl">
