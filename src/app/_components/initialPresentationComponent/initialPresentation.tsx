@@ -30,7 +30,7 @@ const InitalPresentation = () => {
         <Link href="https://github.com/JudsonCiribelli" target="_blank">
           <ShinyButton className="mt-2 flex text-white">GitHub</ShinyButton>
         </Link>
-        <Link href="https://github.com/JudsonCiribelli" target="_blank">
+        <Link href="./Curriculo[Judson_Ciribelli].pdf" target="_blank">
           <ShinyButton className="mt-2 text-white">Download CV</ShinyButton>
         </Link>
       </div>
