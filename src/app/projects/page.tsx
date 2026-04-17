@@ -37,8 +37,8 @@ const mobileProjectsData = [
     liveUrl: "https://mc-process-sim.vercel.app/fsw-donalds",
   },
   {
-    id: "lanchApp",
-    title: "Lanch App",
+    id: "lanchApp API",
+    title: "Lanch App API",
     description:
       "Backend completo para gestão de pedidos de uma lanchonete/pizzaria, focado em segurança, testes automatizados e arquitetura escalável. Este projeto simula um cenário real de Food Delivery. A aplicação permite que clientes façam pedidos (Delivery, Retirada ou Mesa), acompanhem o status em tempo real e gerenciem seus endereços. Para o estabelecimento, o sistema oferece controle total do cardápio e um fluxo de pedidos otimizado para a cozinha. O foco principal foi aplicar Clean Code, arquitetura em camadas, testes de integração validações rigorosas de segurança",
     images: ["/api-image.png"],
@@ -112,7 +112,7 @@ const mobileProjectsData = [
     description:
       "O Clothing é uma plataforma de e-commerce moderna focada em vestuário, construída com foco em performance e experiência do usuário (UX). A aplicação permite que usuários naveguem por coleções, gerenciem um carrinho de compras em tempo real e finalizem pedidos através de um fluxo de checkout seguro e pro",
     images: [
-      "/Ecommerce/Mobile/Cart.png",
+      "/Ecommerce/Mobile/CART.png",
       "/Ecommerce/Mobile/HOME.png",
       "/Ecommerce/Mobile/LOGIN.png",
       "/Ecommerce/Mobile/REGISTER.png",
