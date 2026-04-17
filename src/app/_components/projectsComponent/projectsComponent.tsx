@@ -127,8 +127,7 @@ const ProjectsComponents = () => {
         { src: "/Barber-Pro/Desktop/Login.png", alt: "Login" },
       ],
       githubUrl: "https://github.com/JudsonCiribelli/fsw-barber",
-      liveUrl:
-        "https://fsw-barber-4hnk47lhq-judsons-projects-d573a9e8.vercel.app/",
+      liveUrl: "https://fsw-barber-khaki.vercel.app/",
       isLiveDisabled: false,
     },
     {
