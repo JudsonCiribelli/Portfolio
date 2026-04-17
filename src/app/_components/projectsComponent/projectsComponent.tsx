@@ -194,33 +194,33 @@ const ProjectsComponents = () => {
       liveUrl: "https://ecommerce-one-lake-72.vercel.app/",
       isLiveDisabled: false,
     },
-    {
-      id: "quickbite",
-      title: "Quick Bite - Ecossistema de Delivery",
-      description:
-        "Este projeto é uma reprodução funcional do iFood, criada com o objetivo de praticar e demonstrar o desenvolvimento de uma aplicação completa de delivery. O sistema permite o cadastro de restaurantes e produtos, login de usuários, adição de itens ao carrinho, finalização de pedidos e marcação de restaurantes favoritos. Entre as principais funções estão: Autenticação e criação de contas de usuário. Exibição dos restaurantes disponíveis e seus respectivos cardápios. Adição e remoção de produtos no carrinho com cálculo automático do total. Confirmação de pedidos e acompanhamento básico do status. Possibilidade de favoritar restaurantes para acesso rápido. O projeto foi pensado para unir boa estrutura de  código, organização e experiência do usuário, buscando oferecer uma navegação fluida e próxima do funcionamento real de um aplicativo de delivery.",
-      technologies: [
-        { id: "ts", src: "/Icons/Typescript.png", alt: "TypeScript" },
-        {
-          id: "next",
-          src: "/Icons/Nextjs.png",
-          alt: "Next.js",
-          className: "bg-white rounded-lg",
-        },
-        { id: "pg", src: "/Icons/Postgresql.png", alt: "PostgreSQL" },
-        { id: "auth", src: "/Icons/auth-js-seeklogo.png", alt: "Auth.js" },
-        { id: "tailwind", src: "/Icons/Tailwindcss.png", alt: "Tailwind CSS" },
-      ],
-      images: [
-        { src: "/Quick-Bite/DesktopDesign/Dashboard.png", alt: "Dashboard" },
-        { src: "/Quick-Bite/DesktopDesign/Cart.png", alt: "Cart" },
-        { src: "/Quick-Bite/DesktopDesign/Product.png", alt: "Product" },
-        { src: "/Quick-Bite/DesktopDesign/Order.png", alt: "Order" },
-      ],
-      githubUrl: "https://github.com/JudsonCiribelli/QuickBiteClone",
-      liveUrl: "",
-      isLiveDisabled: true,
-    },
+    // {
+    //   id: "quickbite",
+    //   title: "Quick Bite - Ecossistema de Delivery",
+    //   description:
+    //     "Este projeto é uma reprodução funcional do iFood, criada com o objetivo de praticar e demonstrar o desenvolvimento de uma aplicação completa de delivery. O sistema permite o cadastro de restaurantes e produtos, login de usuários, adição de itens ao carrinho, finalização de pedidos e marcação de restaurantes favoritos. Entre as principais funções estão: Autenticação e criação de contas de usuário. Exibição dos restaurantes disponíveis e seus respectivos cardápios. Adição e remoção de produtos no carrinho com cálculo automático do total. Confirmação de pedidos e acompanhamento básico do status. Possibilidade de favoritar restaurantes para acesso rápido. O projeto foi pensado para unir boa estrutura de  código, organização e experiência do usuário, buscando oferecer uma navegação fluida e próxima do funcionamento real de um aplicativo de delivery.",
+    //   technologies: [
+    //     { id: "ts", src: "/Icons/Typescript.png", alt: "TypeScript" },
+    //     {
+    //       id: "next",
+    //       src: "/Icons/Nextjs.png",
+    //       alt: "Next.js",
+    //       className: "bg-white rounded-lg",
+    //     },
+    //     { id: "pg", src: "/Icons/Postgresql.png", alt: "PostgreSQL" },
+    //     { id: "auth", src: "/Icons/auth-js-seeklogo.png", alt: "Auth.js" },
+    //     { id: "tailwind", src: "/Icons/Tailwindcss.png", alt: "Tailwind CSS" },
+    //   ],
+    //   images: [
+    //     { src: "/Quick-Bite/DesktopDesign/Dashboard.png", alt: "Dashboard" },
+    //     { src: "/Quick-Bite/DesktopDesign/Cart.png", alt: "Cart" },
+    //     { src: "/Quick-Bite/DesktopDesign/Product.png", alt: "Product" },
+    //     { src: "/Quick-Bite/DesktopDesign/Order.png", alt: "Order" },
+    //   ],
+    //   githubUrl: "https://github.com/JudsonCiribelli/QuickBiteClone",
+    //   liveUrl: "",
+    //   isLiveDisabled: true,
+    // },
   ];
 
   return (
