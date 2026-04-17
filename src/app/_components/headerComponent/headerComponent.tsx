@@ -17,16 +17,14 @@ const HeaderComponent = () => {
   const pathname = usePathname();
   const isHomePage = pathname === "/";
   return (
-    <header className="left-0 top-0 z-50 flex w-[430px] items-center justify-center border-b border-gray-700 bg-black py-4 lg:w-full xl:fixed xl:w-full">
+    <header className="left-0 top-0 z-50 flex w-full items-center justify-center border-b border-gray-700 bg-black py-4 xl:fixed">
       {isHomePage ? (
-        <nav className="m-1 w-full max-w-3xl">
-          <div className="grid list-none grid-cols-4 gap-1 xl:flex xl:items-center xl:justify-between xl:gap-8">
-            {navLinks.map((link, index) => (
+        <nav className="m-1 w-full max-w-3xl px-4">
+          <div className="flex list-none flex-wrap items-center justify-center gap-3 xl:justify-between xl:gap-8">
+            {navLinks.map((link) => (
               <div
                 key={link.href}
-                className={`flex justify-center ${
-                  index === 4 ? "col-span-2" : "col-span-1"
-                }`}
+                className="flex w-[45%] justify-center sm:w-auto" // w-[45%] faz criar um grid de 2x2 bem bonito no mobile
               >
                 <div className="w-full max-w-[160px]">
                   <LinkComponent
