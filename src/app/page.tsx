@@ -57,7 +57,7 @@ const Home = () => {
 
       {/* About */}
       <section
-        className="flex h-[1250px] w-full items-center justify-center p-4 xl:h-[850px]"
+        className="flex h-[1250px] w-full scroll-mt-32 items-center justify-center p-4 xl:h-[850px]"
         id="about"
       >
         <div className="relative flex flex-col items-center justify-evenly gap-4 rounded-lg p-7 [box-shadow:-4px_-43px_49px_-5px_rgba(148,96,10,0.24)] xl:w-[1400px] xl:flex-row">
@@ -68,7 +68,7 @@ const Home = () => {
 
       {/* Tecnologias */}
       <section
-        className="h-[800px] w-full items-center p-3 xl:h-[560px]"
+        className="h-[800px] w-full scroll-mt-32 items-center p-3 xl:h-[560px]"
         id="technologies"
       >
         <h2 className="mb-2 text-center text-2xl text-white xl:mb-4 xl:text-7xl">

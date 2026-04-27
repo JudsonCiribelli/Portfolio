@@ -9,7 +9,7 @@ const EducationSection = () => {
   ];
   return (
     <section
-      className="mx-auto mb-5 mt-10 w-full bg-white p-4 shadow-sm"
+      className="mx-auto mb-5 mt-10 w-full scroll-mt-32 bg-white p-4 shadow-sm"
       id="education"
     >
       <h2 className="mb-6 text-center text-2xl font-semibold text-black xl:my-8 xl:text-5xl">

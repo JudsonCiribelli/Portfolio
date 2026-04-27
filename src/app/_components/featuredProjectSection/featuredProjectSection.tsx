@@ -35,7 +35,7 @@ const FeaturedProjectSection = () => {
   ];
   return (
     <section
-      className="mx-auto flex w-full max-w-7xl flex-col items-center px-4 py-10"
+      className="mx-auto flex w-full max-w-7xl scroll-mt-32 flex-col items-center px-4 py-10"
       id="projects"
     >
       <h2 className="mb-8 text-center text-2xl font-semibold text-white xl:text-5xl">
