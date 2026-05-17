@@ -3,12 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "portless run --name myapp next dev",
+    "dev": "portless run --name judsonciribelli next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@gsap/react": "^2.1.2",
     "@prisma/client": "^6.13.0",
     "@radix-ui/react-alert-dialog": "^1.1.15",
     "@radix-ui/react-slot": "^1.2.3",
@@ -17,6 +18,7 @@
     "cobe": "^0.6.4",
     "devicon": "^2.17.0",
     "embla-carousel-react": "^8.6.0",
+    "gsap": "^3.15.0",
     "lucide-react": "^0.525.0",
     "motion": "^12.23.12",
     "next": "15.3.8",

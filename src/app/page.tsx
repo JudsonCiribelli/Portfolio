@@ -3,6 +3,7 @@ import EducationSection from "./_components/educationSection/educationSection";
 import FeaturedProjectSection from "./_components/featuredProjectSection/featuredProjectSection";
 import ImageComponent from "./_components/imageComponent/imageComponent";
 import InitalApresentation from "./_components/initialPresentationComponent/initialPresentation";
+import RevealSection from "./_components/RevealSectionComponent/RevealSection";
 import TechnologiesComponent from "./_components/technologiesComponent/technologiesComponent";
 import { IconCloud } from "./magicui/icon-cloud";
 import { TextAnimate } from "./magicui/text-animate";
@@ -56,33 +57,37 @@ const Home = () => {
       </section>
 
       {/* About */}
-      <section
-        className="flex h-[1250px] w-full scroll-mt-32 items-center justify-center p-4 xl:h-[850px]"
-        id="about"
-      >
-        <div className="relative flex flex-col items-center justify-evenly gap-4 rounded-lg p-7 [box-shadow:-4px_-43px_49px_-5px_rgba(148,96,10,0.24)] xl:w-[1400px] xl:flex-row">
-          <InitalApresentation />
-          <ImageComponent />
-        </div>
-      </section>
+      <RevealSection>
+        <section
+          className="flex h-[1250px] w-full scroll-mt-32 items-center justify-center p-4 xl:h-[850px]"
+          id="about"
+        >
+          <div className="relative flex flex-col items-center justify-evenly gap-4 rounded-lg p-7 [box-shadow:-4px_-43px_49px_-5px_rgba(148,96,10,0.24)] xl:w-[1400px] xl:flex-row">
+            <InitalApresentation />
+            <ImageComponent />
+          </div>
+        </section>
+      </RevealSection>
 
       {/* Tecnologias */}
-      <section
-        className="h-[800px] w-full scroll-mt-32 items-center p-3 xl:h-[560px]"
-        id="technologies"
-      >
-        <h2 className="mb-2 text-center text-2xl text-white xl:mb-4 xl:text-7xl">
-          Tecnologias
-        </h2>
-        <div className="flex flex-col items-center justify-center gap-1 rounded-sm bg-white xl:flex-row xl:rounded-none">
-          <div className="space-y-2">
-            <TechnologiesComponent />
+      <RevealSection>
+        <section
+          className="h-[800px] w-full scroll-mt-32 items-center p-3 xl:h-[560px]"
+          id="technologies"
+        >
+          <h2 className="mb-2 text-center text-2xl text-white xl:mb-4 xl:text-7xl">
+            Tecnologias
+          </h2>
+          <div className="flex flex-col items-center justify-center gap-1 rounded-sm bg-white xl:flex-row xl:rounded-none">
+            <div className="space-y-2">
+              <TechnologiesComponent />
+            </div>
+            <div className="relative flex items-center justify-center overflow-hidden">
+              <IconCloud images={images} />
+            </div>
           </div>
-          <div className="relative flex items-center justify-center overflow-hidden">
-            <IconCloud images={images} />
-          </div>
-        </div>
-      </section>
+        </section>
+      </RevealSection>
 
       {/* Projetos */}
       <FeaturedProjectSection />
